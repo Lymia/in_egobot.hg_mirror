@@ -1,0 +1,59 @@
+ID   Score  Points  Program
+20   55.75   13.17  jix_wiggle3.bfjoust
+23   50.21   10.21  myndzi_slowrush.bfjoust
+ 7   43.30    8.38  ais523_defend10.bfjoust
+ 5   40.61    6.26  Patashu_rushpolarity.bfjoust
+13   39.36    2.48  impomatic_chainmail.bfjoust
+16   39.31    3.64  impomatic_sexyghoul.bfjoust
+17   38.88    3.74  impomatic_spookygoth.bfjoust
+ 8   38.44    5.81  ais523_defend7.bfjoust
+21   36.57    4.74  myndzi_3pass.bfjoust
+22   35.89    4.50  myndzi_oddly.bfjoust
+15   34.31    2.43  impomatic_neon_glow.bfjoust
+24   34.19    0.90  nescience_shade.bfjoust
+14   33.53    4.21  impomatic_mirage.bfjoust
+ 6   31.79    3.74  ais523_decoybooster.bfjoust
+ 1   31.21    0.71  Deewiant_monorail.bfjoust
+19   31.08    1.33  jix_wiggle2.bfjoust
+10   31.03    0.12  ais523_large_decoy_attack.bfjoust
+ 9   29.52    4.86  ais523_defend9.bfjoust
+18   29.38    1.05  impomatic_wildfire.bfjoust
+11   27.28    0.24  ais523_tripstridewire.bfjoust
+ 2   25.35   -5.55  Deewiant_steamroller.bfjoust
+27   24.08   -5.10  quintopia_slowmonorail.bfjoust
+26   16.18   -1.24  quintopia_one_o_them_shudder_thangs.bfjoust
+ 0   11.64   -3.81  Deewiant_maglev.bfjoust
+25    7.74  -12.62  quintopia_nop.bfjoust
+12    3.90   -6.98  ais523_tripwire_sensor.bfjoust
+ 4    0.14  -20.24  Gregor_specifically_defeat_defend10_and_in_only_one_polarity.bfjoust
+ 3    0.00  -27.00  Gregor_lets_fill_the_newly_resized_hill_with_stupid_garbage.bfjoust
+
+   |  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 | score | pts   | program
+ 0 |     -  -  +  +  -  +  0  -  +  -  -  +  -  +  0  +  +  0  -  -  -  -  -  -  +  -  - |  11.6 |  -3.8 | Deewiant_maglev.bfjoust
+ 1 |  +     +  +  +  +  -  -  -  +  -  +  +  -  +  -  -  -  -  -  -  -  +  +  +  +  +  + |  31.2 |   0.7 | Deewiant_monorail.bfjoust
+ 2 |  +  -     +  +  -  -  +  +  +  -  -  +  +  -  -  -  -  -  -  -  -  -  -  -  +  +  + |  25.3 |  -5.5 | Deewiant_steamroller.bfjoust
+ 3 |  -  -  -     -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - |   0.0 | -27.0 | Gregor_lets_fill_the_newly_resized_hill_with_stupid_garbage.bfjoust
+ 4 |  -  -  -  +     -  -  0  0  -  -  -  -  0  -  -  -  -  -  -  -  -  -  -  -  -  -  - |   0.1 | -20.2 | Gregor_specifically_defeat_defend10_and_in_only_one_polarity.bfjoust
+ 5 |  +  -  +  +  +     +  0  +  -  +  -  +  -  +  +  +  +  -  -  -  +  +  -  -  +  +  - |  40.6 |   6.3 | Patashu_rushpolarity.bfjoust
+ 6 |  -  +  +  +  +  -     +  +  +  +  +  +  +  -  -  +  +  +  +  +  -  -  -  -  +  +  + |  31.8 |   3.7 | ais523_decoybooster.bfjoust
+ 7 |  0  +  -  +  0  0  -     0  0  +  +  0  0  -  +  +  +  +  +  -  +  +  +  +  0  0  0 |  43.3 |   8.4 | ais523_defend10.bfjoust
+ 8 |  +  +  -  +  0  -  -  0     0  +  +  0  0  0  +  +  +  +  +  -  0  +  -  +  0  0  + |  38.4 |   5.8 | ais523_defend7.bfjoust
+ 9 |  -  -  -  +  +  +  -  0  0     +  +  0  +  -  +  -  -  0  -  -  +  -  -  +  0  0  + |  29.5 |   4.9 | ais523_defend9.bfjoust
+10 |  +  +  +  +  +  -  -  -  -  -     -  +  -  +  +  -  -  +  +  +  -  -  -  0  +  -  + |  31.0 |   0.1 | ais523_large_decoy_attack.bfjoust
+11 |  +  -  +  +  +  +  -  -  -  -  +     +  +  0  -  -  -  -  -  +  -  +  +  +  -  -  + |  27.3 |   0.2 | ais523_tripstridewire.bfjoust
+12 |  -  -  -  +  +  -  -  0  0  0  -  -     0  -  -  -  -  -  -  -  -  -  -  +  0  0  - |   3.9 |  -7.0 | ais523_tripwire_sensor.bfjoust
+13 |  +  +  -  +  0  +  -  0  0  -  +  -  0     -  +  -  -  -  +  +  +  +  +  -  0  0  + |  39.4 |   2.5 | impomatic_chainmail.bfjoust
+14 |  -  -  +  +  +  -  +  +  0  +  -  0  +  +     +  +  +  +  +  -  -  -  -  -  +  -  + |  33.5 |   4.2 | impomatic_mirage.bfjoust
+15 |  0  +  +  +  +  -  +  -  -  -  -  +  +  -  -     +  +  +  +  -  -  -  -  +  +  +  + |  34.3 |   2.4 | impomatic_neon_glow.bfjoust
+16 |  -  +  +  +  +  -  -  -  -  +  +  +  +  +  -  -     -  +  +  -  -  -  -  -  +  +  + |  39.3 |   3.6 | impomatic_sexyghoul.bfjoust
+17 |  -  +  +  +  +  -  -  -  -  +  +  +  +  +  -  -  +     +  +  -  -  -  -  -  +  +  + |  38.9 |   3.7 | impomatic_spookygoth.bfjoust
+18 |  0  +  +  +  +  +  -  -  -  0  -  +  +  +  -  -  -  -     +  -  -  +  -  -  +  +  + |  29.4 |   1.0 | impomatic_wildfire.bfjoust
+19 |  +  +  +  +  +  +  -  -  -  +  -  +  +  -  -  -  -  -  -     -  +  +  +  -  +  -  + |  31.1 |   1.3 | jix_wiggle2.bfjoust
+20 |  +  +  +  +  +  +  -  +  +  +  -  -  +  -  +  +  +  +  +  +     +  +  +  +  +  +  + |  55.8 |  13.2 | jix_wiggle3.bfjoust
+21 |  +  +  +  +  +  -  +  -  0  -  +  +  +  -  +  +  +  +  +  -  -     -  -  +  +  +  - |  36.6 |   4.7 | myndzi_3pass.bfjoust
+22 |  +  -  +  +  +  -  +  -  -  +  +  -  +  -  +  +  +  +  -  -  -  +     -  +  +  +  - |  35.9 |   4.5 | myndzi_oddly.bfjoust
+23 |  +  -  +  +  +  +  +  -  +  +  +  -  +  -  +  +  +  +  +  -  -  +  +     +  +  +  - |  50.2 |  10.2 | myndzi_slowrush.bfjoust
+24 |  +  -  +  +  +  +  +  -  -  -  0  -  -  +  +  -  +  +  +  +  -  -  -  -     -  -  + |  34.2 |   0.9 | nescience_shade.bfjoust
+25 |  -  -  -  +  +  -  -  0  0  0  -  +  0  0  -  -  -  -  -  -  -  -  -  -  +     0  - |   7.7 | -12.6 | quintopia_nop.bfjoust
+26 |  +  -  -  +  +  -  -  0  0  0  +  +  0  0  +  -  -  -  -  +  -  -  -  -  +  0     - |  16.2 |  -1.2 | quintopia_one_o_them_shudder_thangs.bfjoust
+27 |  +  -  -  +  +  +  -  0  -  -  -  -  +  -  -  -  -  -  -  -  -  +  +  +  -  +  +    |  24.1 |  -5.1 | quintopia_slowmonorail.bfjoust
