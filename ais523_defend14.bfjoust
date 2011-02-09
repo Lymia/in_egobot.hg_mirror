@@ -1,0 +1,312 @@
+Set up two adjacent reverse tripwires, and a tiny decoy behind them to let
+us beat the opponent back to our flag when the reverse tripwires trip, and
+another to serve as a tripwire or reverse tripwire later depending on the
+enemy strategy
+>->>->>+<+
+(((-[
+  First reverse tripwire tripped; let's assume the opponent is a rush based
+  attacker and set up a normal tripwire to check their timings
+  <<----[][
+    Opponent used positive offset clear; try to trap them on the tripwire cell
+    We want to increase the counter by about 64 while the opponent tries to push
+    it down; we use 32 pushes upwards then check the cell before for zeroness
+    in case they aren't trapped after all; then another 128 and try again
+    (+)*32<+
+    [
+      The opponent wriggled free; likely explanation is a misdetection
+      Guess the opponent is consistent about direction and try to push
+      downwards
+      This branch is based on defend12 and assumes that we are pretty clear
+      on which direction the opponent will try
+      <(.)*94
+      ((-)*1280(>)* 9(.+)*119(<)* 9)*3
+      ((-)*1280(>)*10(.+)*118(<)*10)*3
+      ((-)*1280(>)*11(.+)*117(<)*11)*3
+      ((-)*1280(>)*12(.+)*116(<)*12)*3
+      ((-)*1280(>)*13(.+)*115(<)*13)*3
+      ((-)*1280(>)*14(.+)*114(<)*14)*3
+      ((-)*1280(>)*15(.+)*113(<)*15)*3
+      ((-)*1280(>)*16(.+)*112(<)*16)*3
+      ((-)*1280(>)*17(.+)*111(<)*17)*3
+      ((-)*1280(>)*18(.+)*110(<)*18)*3
+      ((-)*1280(>)*19(.+)*109(<)*19)*3
+      ((-)*1280(>)*20(.+)*108(<)*20)*3
+      ((-)*1280(>)*21(.+)*107(<)*21)*3
+      ((-)*1280(>)*22(.+)*106(<)*22)*3
+      ((-)*1280(>)*23(.+)*105(<)*23)*3
+      ((-)*1280(>)*24(.+)*104(<)*24)*3
+      ((-)*1280(>)*25(.+)*103(<)*25)*3
+      ((-)*1280(>)*26(.+)*102(<)*26)*3
+      ((-)*1280(>)*27(.+)*101(<)*27)*3
+      ((-)*1280(>)*28(.+)*100(<)*28)*3
+      ((-)*1280(>)*29(.+)* 99(<)*29)*3
+    ]
+    ->(+)*128<+
+    [
+      The opponent seems to be using a fixed cycle clear algorithm
+      To block this we go back to our flag and change the value somewhat
+      Then we try to do a fast attack in order to minimize the risk of
+      the enemy looping on the flag
+      <(-)*64
+      >>>>>>>>
+      (>(+)*8[-])*21
+    ]
+    >
+    [
+      The opponent seems to be stuck in a decrement loop; probably c/2
+      Use a 128 cycle strategy in order to keep them confined in the range
+      ~80 to 145 in order to prevent them detecting a 0 and breaking out
+      This branch works like defend7
+      ([(+)*128(>)* 7(.+)*57(<)* 7)*5
+        ((+)*128(>)* 8(.+)*56(<)* 8)*5
+        ((+)*128(>)* 9(.+)*55(<)* 9)*5
+        ((+)*128(>)*10(.+)*54(<)*10)*5
+        ((+)*128(>)*11(.+)*53(<)*11)*5
+        ((+)*128(>)*12(.+)*52(<)*12)*5
+        ((+)*128(>)*13(.+)*51(<)*13)*6
+        ((+)*128(>)*14(.+)*50(<)*14)*6
+        ((+)*128(>)*15(.+)*49(<)*15)*6
+        ((+)*128(>)*16(.+)*48(<)*16)*6
+        ((+)*128(>)*17(.+)*47(<)*17)*6
+        ((+)*128(>)*18(.+)*46(<)*18)*6
+        ((+)*128(>)*19(.+)*45(<)*19)*6
+        ((+)*128(>)*20(.+)*44(<)*20)*6
+        ((+)*128(>)*21(.+)*43(<)*21)*6
+        ((+)*128(>)*22(.+)*42(<)*22)*7
+        ((+)*128(>)*23(.+)*41(<)*23)*7
+        ((+)*128(>)*24(.+)*40(<)*24)*7
+        ((+)*128(>)*25(.+)*39(<)*25)*7
+        ((+)*128(>)*26(.+)*38(<)*26)*8
+        ((+)*128(>)*27(.+)*37(<)*27)*8
+        (]
+      This bit is reached if we detected a decrement loop but it isn't c/2
+      for some reason; as we know it's decrementing we can just push it using
+      a number with lots of factors minus 1 times 128
+      Need to be careful not to timeout; hill runs for 100000 turns; so we use
+      3712 and a faster clear algo to avoid repetitions
+      <<(.)*94
+      (-)*3712(>)* 9(+)* 73(.+)*55(<)* 9
+      (-)*3712(>)*10(+)* 75(.+)*54(<)*10
+      (-)*3712(>)*11(+)* 77(.+)*53(<)*11
+      (-)*3712(>)*12(+)* 79(.+)*52(<)*12
+      (-)*3712(>)*13(+)* 81(.+)*51(<)*13
+      (-)*3712(>)*14(+)* 83(.+)*50(<)*14
+      (-)*3712(>)*15(+)* 85(.+)*49(<)*15
+      (-)*3712(>)*16(+)* 87(.+)*48(<)*16
+      (-)*3712(>)*17(+)* 89(.+)*47(<)*17
+      (-)*3712(>)*18(+)* 91(.+)*46(<)*18
+      (-)*3712(>)*19(+)* 93(.+)*45(<)*19
+      (-)*3712(>)*20(+)* 95(.+)*44(<)*20
+      (-)*3712(>)*21(+)* 97(.+)*43(<)*21
+      (-)*3712(>)*22(+)* 99(.+)*42(<)*22
+      (-)*3712(>)*23(+)*101(.+)*41(<)*23
+      (-)*3712(>)*24(+)*103(.+)*40(<)*24
+      (-)*3712(>)*25(+)*105(.+)*39(<)*25
+      (-)*3712(>)*26(+)*107(.+)*38(<)*26
+      (-)*3712(>)*27(+)*109(.+)*37(<)*27
+      (-)*3712(>)*28(+)*111(.+)*36(<)*28
+      (-)*3712(>)*29(+)*113(.+)*35(<)*29
+      )*5
+    ]
+    The opponent is using a very slow or chaotic clear algorithm
+    Defending is unlikely to help; so use a simple attack instead
+    >>>>>>>
+    (>(+)*8[-])*21
+  ]
+  Opponent used negative or no offset clear; go upwards and hope it pushes
+  This branch works like defend10 so that it works on twocycle clears in either
+  direction
+  <[[]]<(.)*127
+  ((+)*256(>)* 9(.+)*119(<)* 9)*3
+  ((+)*256(>)*10(.+)*118(<)*10)*3
+  ((+)*256(>)*11(.+)*117(<)*11)*3
+  ((+)*256(>)*12(.+)*116(<)*12)*3
+  ((+)*256(>)*13(.+)*115(<)*13)*3
+  ((+)*256(>)*14(.+)*114(<)*14)*3
+  ((+)*256(>)*15(.+)*113(<)*15)*3
+  ((+)*256(>)*16(.+)*112(<)*16)*3
+  ((+)*256(>)*17(.+)*111(<)*17)*3
+  ((+)*256(>)*18(.+)*110(<)*18)*3
+  ((+)*256(>)*19(.+)*109(<)*19)*3
+  ((+)*256(>)*20(.+)*108(<)*20)*3
+  ((+)*256(>)*21(.+)*107(<)*21)*3
+  ((+)*256(>)*22(.+)*106(<)*22)*3
+  ((+)*256(>)*23(.+)*105(<)*23)*3
+  ((+)*256(>)*24(.+)*104(<)*24)*3
+  ((+)*256(>)*25(.+)*103(<)*25)*3
+  ((+)*256(>)*26(.+)*102(<)*26)*3
+  ((+)*256(>)*27(.+)*101(<)*27)*3
+  ((+)*256(>)*28(.+)*100(<)*28)*3
+  ((+)*256(>)*29(.+)* 99(<)*29)*3
+]+>-[
+  Second reverse tripwire tripped; let's assume the opponent is a rush based
+  attacker and set up a normal tripwire to check their timings
+  This is basically a copy/paste of the code for the first with one offset
+  changed
+  <<<----[][
+    Opponent used positive offset clear; try to trap them on the tripwire cell
+    We want to increase the counter by about 64 while the opponent tries to push
+    it down; we use 32 pushes upwards then check the cell before for zeroness
+    in case they aren't trapped after all; then another 128 and try again
+    (+)*32<+
+    [
+      The opponent wriggled free; likely explanation is a misdetection
+      Guess the opponent is consistent about direction and try to push
+      downwards
+      This branch is based on defend12 and assumes that we are pretty clear
+      on which direction the opponent will try
+      <(.)*94
+      ((-)*1280(>)* 9(.+)*119(<)* 9)*3
+      ((-)*1280(>)*10(.+)*118(<)*10)*3
+      ((-)*1280(>)*11(.+)*117(<)*11)*3
+      ((-)*1280(>)*12(.+)*116(<)*12)*3
+      ((-)*1280(>)*13(.+)*115(<)*13)*3
+      ((-)*1280(>)*14(.+)*114(<)*14)*3
+      ((-)*1280(>)*15(.+)*113(<)*15)*3
+      ((-)*1280(>)*16(.+)*112(<)*16)*3
+      ((-)*1280(>)*17(.+)*111(<)*17)*3
+      ((-)*1280(>)*18(.+)*110(<)*18)*3
+      ((-)*1280(>)*19(.+)*109(<)*19)*3
+      ((-)*1280(>)*20(.+)*108(<)*20)*3
+      ((-)*1280(>)*21(.+)*107(<)*21)*3
+      ((-)*1280(>)*22(.+)*106(<)*22)*3
+      ((-)*1280(>)*23(.+)*105(<)*23)*3
+      ((-)*1280(>)*24(.+)*104(<)*24)*3
+      ((-)*1280(>)*25(.+)*103(<)*25)*3
+      ((-)*1280(>)*26(.+)*102(<)*26)*3
+      ((-)*1280(>)*27(.+)*101(<)*27)*3
+      ((-)*1280(>)*28(.+)*100(<)*28)*3
+      ((-)*1280(>)*29(.+)* 99(<)*29)*3
+    ]
+    ->(+)*128<+
+    [
+      The opponent seems to be using a fixed cycle clear algorithm
+      To block this we go back to our flag and change the value somewhat
+      Then we try to do a fast attack in order to minimize the risk of
+      the enemy looping on the flag
+      <(-)*64
+      >>>>>>>>
+      (>(+)*8[-])*21
+    ]
+    >
+    [
+      The opponent seems to be stuck in a decrement loop; probably c/2
+      Use a 128 cycle strategy in order to keep them confined in the range
+      ~80 to 145 in order to prevent them detecting a 0 and breaking out
+      This branch works like defend7
+      ([(+)*128(>)* 7(.+)*57(<)* 7)*5
+        ((+)*128(>)* 8(.+)*56(<)* 8)*5
+        ((+)*128(>)* 9(.+)*55(<)* 9)*5
+        ((+)*128(>)*10(.+)*54(<)*10)*5
+        ((+)*128(>)*11(.+)*53(<)*11)*5
+        ((+)*128(>)*12(.+)*52(<)*12)*5
+        ((+)*128(>)*13(.+)*51(<)*13)*6
+        ((+)*128(>)*14(.+)*50(<)*14)*6
+        ((+)*128(>)*15(.+)*49(<)*15)*6
+        ((+)*128(>)*16(.+)*48(<)*16)*6
+        ((+)*128(>)*17(.+)*47(<)*17)*6
+        ((+)*128(>)*18(.+)*46(<)*18)*6
+        ((+)*128(>)*19(.+)*45(<)*19)*6
+        ((+)*128(>)*20(.+)*44(<)*20)*6
+        ((+)*128(>)*21(.+)*43(<)*21)*6
+        ((+)*128(>)*22(.+)*42(<)*22)*7
+        ((+)*128(>)*23(.+)*41(<)*23)*7
+        ((+)*128(>)*24(.+)*40(<)*24)*7
+        ((+)*128(>)*25(.+)*39(<)*25)*7
+        ((+)*128(>)*26(.+)*38(<)*26)*8
+        ((+)*128(>)*27(.+)*37(<)*27)*8
+        (]
+      This bit is reached if we detected a decrement loop but it isn't c/2
+      for some reason; as we know it's decrementing we can just push it using
+      a number with lots of factors minus 1 times 128
+      Need to be careful not to timeout; hill runs for 100000 turns; so we use
+      3712 and a faster clear algo to avoid repetitions
+      <<(.)*94
+      (-)*3712(>)* 9(+)* 73(.+)*55(<)* 9
+      (-)*3712(>)*10(+)* 75(.+)*54(<)*10
+      (-)*3712(>)*11(+)* 77(.+)*53(<)*11
+      (-)*3712(>)*12(+)* 79(.+)*52(<)*12
+      (-)*3712(>)*13(+)* 81(.+)*51(<)*13
+      (-)*3712(>)*14(+)* 83(.+)*50(<)*14
+      (-)*3712(>)*15(+)* 85(.+)*49(<)*15
+      (-)*3712(>)*16(+)* 87(.+)*48(<)*16
+      (-)*3712(>)*17(+)* 89(.+)*47(<)*17
+      (-)*3712(>)*18(+)* 91(.+)*46(<)*18
+      (-)*3712(>)*19(+)* 93(.+)*45(<)*19
+      (-)*3712(>)*20(+)* 95(.+)*44(<)*20
+      (-)*3712(>)*21(+)* 97(.+)*43(<)*21
+      (-)*3712(>)*22(+)* 99(.+)*42(<)*22
+      (-)*3712(>)*23(+)*101(.+)*41(<)*23
+      (-)*3712(>)*24(+)*103(.+)*40(<)*24
+      (-)*3712(>)*25(+)*105(.+)*39(<)*25
+      (-)*3712(>)*26(+)*107(.+)*38(<)*26
+      (-)*3712(>)*27(+)*109(.+)*37(<)*27
+      (-)*3712(>)*28(+)*111(.+)*36(<)*28
+      (-)*3712(>)*29(+)*113(.+)*35(<)*29
+      )*5
+    ]
+    The opponent is using a very slow or chaotic clear algorithm
+    Defending is unlikely to help; so use a simple attack instead
+    >>>>>>>
+    (>(+)*8[-])*21
+  ]
+  Opponent used negative or no offset clear; go upwards and hope it pushes
+  This branch works like defend10 so that it works on twocycle clears in either
+  direction
+  <[[]]<(.)*127
+  ((+)*256(>)* 9(.+)*119(<)* 9)*3
+  ((+)*256(>)*10(.+)*118(<)*10)*3
+  ((+)*256(>)*11(.+)*117(<)*11)*3
+  ((+)*256(>)*12(.+)*116(<)*12)*3
+  ((+)*256(>)*13(.+)*115(<)*13)*3
+  ((+)*256(>)*14(.+)*114(<)*14)*3
+  ((+)*256(>)*15(.+)*113(<)*15)*3
+  ((+)*256(>)*16(.+)*112(<)*16)*3
+  ((+)*256(>)*17(.+)*111(<)*17)*3
+  ((+)*256(>)*18(.+)*110(<)*18)*3
+  ((+)*256(>)*19(.+)*109(<)*19)*3
+  ((+)*256(>)*20(.+)*108(<)*20)*3
+  ((+)*256(>)*21(.+)*107(<)*21)*3
+  ((+)*256(>)*22(.+)*106(<)*22)*3
+  ((+)*256(>)*23(.+)*105(<)*23)*3
+  ((+)*256(>)*24(.+)*104(<)*24)*3
+  ((+)*256(>)*25(.+)*103(<)*25)*3
+  ((+)*256(>)*26(.+)*102(<)*26)*3
+  ((+)*256(>)*27(.+)*101(<)*27)*3
+  ((+)*256(>)*28(.+)*100(<)*28)*3
+  ((+)*256(>)*29(.+)* 99(<)*29)*3
+]+<)*5)*5)*5
+The antitripwire is stubbornly staying still; assume the opponent is
+defence or shudder based
+
+We are four cells from our flag; move to eight cells from the flag
+>>>>
+
+In order to avoid shudder death we use defense detectors on all motion from now
+on; in other words we close two loops immediately before moving past the safe
+area of the tape
+We avoid predictable tight loops to evade defense programs
+Avoid moving too slowly so as to prevent defense programs outrunning us by
+mistake
+
+(>([+[--[(-)*30[++-.]]]])*2)*21
+
+We can only get here as a result of a shudder strategy; because getting here
+requires the enemy flag to have been 0 the first time we encountered it
+So we just do a bunch of random arithmetic in the hope it falls eventually
+
+(++-...-.-------..-.-+.-+.+.+--.-++++..-...+.---.+++-++--+.----++.--+..+-.
+...+..--...++-++.--.----++-+-+......+++..-.++-..-++-.-....+-+.++.--.++-+..
+-...+----.++++.+.-.+++++.+.+-.+.+++-+.-.---.+.+--+..+...-..+--++.+--.-++-.
+-+++++.++++-.-..-.+..++-+.+...+++-.+...+.+.-++--+-...+.-..-+-...-...-.---+
+---.-.+-++.+..-..-+--.--.+-.++----+-++.-..+++.+-+-.+.---.--++--..+.--++-..
+-.-.++-+.++--+.---.+.-.+--.+...+-.--+----.-.+-.--+.-+.-+.+++.-.-+----+-.++
+.+..----.++..-++.--.+......-+-.+.+.++-.-.-++-.+-+-+.----..+-.+--+..--..-+-
++.--+++.++++..+-+-...-.++-.+-..---.+-+....-.++-.--.-+++-+.++-+---.+.-+-++-
+.+--.+++-+-.----+++.-+-++--+-+...+++-+--++-+.+-+-+.+++.-...-.-++---.++.+-.
+.++.+.......+..+-.+--+..-++-.--++-...--++-++.++--++-+.-.-++.-.-...+++..-..
+--++--....--+.+++--.+.-+.--.+.--.+.+....++.-.--.-+......-+----++--+-.-+-+.
++.-++-.-+-..-+---.-.--..+++.++--+.++.---.+-.-....+.-..-.+..+...-.--++.-.+.
+--..+.+.+-+.+.-.+.-.+-..---.++--..-.-.++-++.-.-.++-+.....---+...--+-+-.++.
+...-..--+-.++.+-+.+--.+-.-.--+..+-+.-.-)*1000
+
