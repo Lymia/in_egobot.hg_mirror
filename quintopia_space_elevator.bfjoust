@@ -7,7 +7,7 @@ planned for future versions: more decoys if needed, backup attacks to handle tim
 	(>)*8([[[[-[++[(+)*15.[.-].[.++-------]]]]]]]>[[[[-[++[(+)*15.[-].[.++-------]]]]]]]>)*10
 ]>                        look again! 2
 [(<)*9(+)*32             opponent found; back off fast and build a big decoy
-	(>)*9([[[[-[++[(+)*15.[.-].[.++-------]]]]]]]>[[[[-[++[(+)*15.[-].[.++-------]]]]]]]>)*9[[[[-[++[(+)*9.[.-].[.++-------]]]]]]]
+	(>)*9([[[[-[++[(+)*15.[.-].[.++-------]]]]]]]>[[[[-[++[(+)*15.[-].[.++-------]]]]]]]>)*9[[[[-[++[(+)*15.[.-].[.++-------]]]]]]]
 ]>                        look again! 3
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 <
@@ -1126,5 +1126,5 @@ planned for future versions: more decoys if needed, backup attacks to handle tim
  
 ]>                        look again! 21
 (-)*116(.-)*256(..-)*256[[..-]]              yeah, let's not jump through hoops when we're already at the flag :P
-]
+
 
