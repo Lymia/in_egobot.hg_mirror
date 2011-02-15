@@ -359,7 +359,7 @@ Assume opponent is mindbogglingly slow; and just go kill them
 4 cycle clear downwards; or 2 cycle clear upwards
 Assume 2 cycle upwards
 
-<<(+)*40(.)*88
+<<(+)*40(.)*160
 ((-)*256(>)* 9(.+)*119(<)* 9)*3
 ((-)*256(>)*10(.+)*118(<)*10)*3
 ((-)*256(>)*11(.+)*117(<)*11)*3
@@ -417,7 +417,7 @@ their flag by over 100
 We're dealing with a 2 cycle or 1 cycle program clearing downwards
 Use defend10 strategy
 
-<<(.)*88(+)*40
+<<(.)*160(+)*40 unusually long wait to allow for high enemy offset clears
 ((+)*256(>)* 9(.+)*119(<)* 9)*3
 ((+)*256(>)*10(.+)*118(<)*10)*3
 ((+)*256(>)*11(.+)*117(<)*11)*3
@@ -443,10 +443,10 @@ Use defend10 strategy
 
 ]++++++++++++>
 
-)*3)*3
+)*4)*4
 
 Looks like the enemy is defensive
 Let's go 5 cycle their flag
 
->(>++[-...])*21
+>(>++[-...][+++++------.])*21
 
