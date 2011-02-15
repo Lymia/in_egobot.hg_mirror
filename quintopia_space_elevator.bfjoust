@@ -1,4 +1,4 @@
-space_elevator by quintopia, version 1_5_1
+space_elevator by quintopia, version 1_5_2
 planned for future versions: more decoys if needed, backup attacks to handle timing attacks, second tripwire checks for fast-to-slow rushers, possible smaller first decoy to arrive at tripwires on time
 the two minuses in the previous line are there on purpose
 
@@ -10,7 +10,7 @@ the two minuses in the previous line are there on purpose
 [<<-(<)*6(-)*32<(+)*32       opponent found; back off fast and build a big decoy; maybe we can afford two on short tape
 	(>)*9([[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]]>)*10
 ]>                        look again! 3
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 <
  +[                       tripwire tripped! the opponent is working on our flag! 
     <<+(.)*60              board is 12 wide
@@ -94,17 +94,17 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*22
    ]+
-
+ <(-)*29>                      anti-careless flag decrementation
 >(-)*32                 tripwire not tripped! assume opponent is defender or slow rush
 <(+)*32
 >>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]])*10
 ]+>                       look again! 4
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 <<
  +[
                           tripewire tripped!
-     <<+(.)*60             board is 13 wide
+     <<+(.)*30             board is 13 wide
 	((+)*256 (>)*12 (+.)*116 (<)*12)*2
 	(+)*256 (>)*12 (+.)*24 > (+.)*91 (<)*13
 	(+)*256 (>)*13 (+.)*115 (<)*13
@@ -144,7 +144,7 @@ the two minuses in the previous line are there on purpose
   ]-
  <-[
                           tripewire tripped!
-     <+(.)*60              board is 13 wide
+     <+(.)*30              board is 13 wide
 	((+)*256 (>)*12 (+.)*116 (<)*12)*2
 	(+)*256 (>)*12 (+.)*24 > (+.)*91 (<)*13
 	(+)*256 (>)*13 (+.)*115 (<)*13
@@ -182,7 +182,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*5
   ]-
-
+ <(-)*29>                      anti-careless flag decrementation
   >>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
    <(-)*32
    <(-)*32
@@ -190,11 +190,11 @@ the two minuses in the previous line are there on purpose
 	(>)*6([[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]]>)*9
 
 ]>                        look again! 5
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 <<<
  +[
                           tripwire tripped!
-    <<+(.)*60               board is 14 wide
+    <<+(.)*30               board is 14 wide
 	((+)*256 (>)*13 (+.)*115 (<)*13)*2
 	(+)*256 (>)*13 (+.)*26 > (+.)*88 (<)*14
 	(+)*256 (>)*14 (+.)*114 (<)*14
@@ -232,7 +232,7 @@ the two minuses in the previous line are there on purpose
  ]-
 <-[
                           tripwire tripped!
-    <+(.)*60               board is 14 wide
+    <+(.)*30               board is 14 wide
 	((+)*256 (>)*13 (+.)*115 (<)*13)*2
 	(+)*256 (>)*13 (+.)*26 > (+.)*88 (<)*14
 	(+)*256 (>)*14 (+.)*114 (<)*14
@@ -267,7 +267,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*23 > (+.)*76 (<)*29
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*81
- ]+
+ ]+ <(-)*29>                      anti-careless flag decrementation
   >>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
     <(-)*33
     <(-)*22
@@ -275,11 +275,11 @@ the two minuses in the previous line are there on purpose
  >>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]])*9
 ]>                        look again! 6
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 <<<<
  +[
                           tripwire tripped!
-    <<+(.)*60               board is 15 wide
+    <<+(.)*30               board is 15 wide
 	((+)*256 (>)*14 (+.)*114 (<)*14)*2
 	(+)*256 (>)*14 (+.)*28 > (+.)*85 (<)*15
 	(+)*256 (>)*15 (+.)*113 (<)*15
@@ -315,7 +315,7 @@ the two minuses in the previous line are there on purpose
  ]+
 <-[
                           tripwire tripped!
-    <+(.)*60               board is 15 wide
+    <+(.)*30               board is 15 wide
 	((+)*256 (>)*14 (+.)*114 (<)*14)*2
 	(+)*256 (>)*14 (+.)*28 > (+.)*85 (<)*15
 	(+)*256 (>)*15 (+.)*113 (<)*15
@@ -348,7 +348,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*2 > (+.)*97 (<)*29
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*60
- ]-
+ ]- <(-)*29>                      anti-careless flag decrementation
   >>>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
      <(-)*33
      <(-)*23
@@ -357,11 +357,11 @@ the two minuses in the previous line are there on purpose
  >>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]]>)*8
 ]>                       look again! 7
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*5
  +[
                           you get the idea
-     <<+(.)*60
+     <<+(.)*30
 	((+)*256 (>)*15 (+.)*113 (<)*15)*2
 	(+)*256 (>)*15 (+.)*30 > (+.)*82 (<)*16
 	(+)*256 (>)*16 (+.)*112 (<)*16
@@ -394,7 +394,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*35
  ]-
 <-[
-     <+(.)*60
+     <+(.)*30
 	((+)*256 (>)*15 (+.)*113 (<)*15)*2
 	(+)*256 (>)*15 (+.)*30 > (+.)*82 (<)*16
 	(+)*256 (>)*16 (+.)*112 (<)*16
@@ -425,7 +425,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*76 > (+.)*23 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*35
-]+
+]+ <(-)*29>                      anti-careless flag decrementation
   >>>>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*23
@@ -435,10 +435,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]])*8
 ]+>                        look again! 8
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*6
  +[
-     <<+(.)*60
+     <<+(.)*30
 	((+)*256 (>)*16 (+.)*112 (<)*16)*2
 	(+)*256 (>)*16 (+.)*32 > (+.)*79 (<)*17
 	(+)*256 (>)*17 (+.)*111 (<)*17
@@ -470,7 +470,7 @@ the two minuses in the previous line are there on purpose
 
  ]+
 <-[
-     <+(.)*60
+     <+(.)*30
 	((+)*256 (>)*16 (+.)*112 (<)*16)*2
 	(+)*256 (>)*16 (+.)*32 > (+.)*79 (<)*17
 	(+)*256 (>)*17 (+.)*111 (<)*17
@@ -499,7 +499,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*(+.)*50 > (+.)*49 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*9
- ]-
+ ]- <(-)*29>                      anti-careless flag decrementation
   (>)*6(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*23
@@ -510,10 +510,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]]>)*7
 ]>                        look again! 9
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*7
  +[
-     <<+(.)*60
+     <<+(.)*30
 	((+)*256 (>)*17 (+.)*111 (<)*17)*2
 	(+)*256 (>)*17 (+.)*34 > (+.)*76 (<)*18
 	(+)*256 (>)*18 (+.)*110 (<)*18
@@ -543,7 +543,7 @@ the two minuses in the previous line are there on purpose
 
  ]+
 <-[
-     <+(.)*60
+     <+(.)*30
 	((+)*256 (>)*17 (+.)*111 (<)*17)*2
 	(+)*256 (>)*17 (+.)*34 > (+.)*76 (<)*18
 	(+)*256 (>)*18 (+.)*110 (<)*18
@@ -571,7 +571,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*78
   ]-
-
+ <(-)*29>                      anti-careless flag decrementation
   (>)*7(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -583,10 +583,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]])*7
 ]>                       look again! 10
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*8
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*18 (+.)*110 (<)*18)*2
 	(+)*256 (>)*18 (+.)*36 > (+.)*73 (<)*19
 	(+)*256 (>)*19 (+.)*109 (<)*19
@@ -613,7 +613,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*48
    ]-
  <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*18 (+.)*110 (<)*18)*2
 	(+)*256 (>)*18 (+.)*36 > (+.)*73 (<)*19
 	(+)*256 (>)*19 (+.)*109 (<)*19
@@ -639,7 +639,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*48
    ]+
-
+ <(-)*29>                      anti-careless flag decrementation
   (>)*8(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -652,10 +652,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*6
 ]>                        look again! 11
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*9
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*19 (+.)*109 (<)*19)*2
 	(+)*256 (>)*19 (+.)*38 > (+.)*70 (<)*20
 	(+)*256 (>)*20 (+.)*108 (<)*20
@@ -681,7 +681,7 @@ the two minuses in the previous line are there on purpose
 
   ]-
 <-[  
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*19 (+.)*109 (<)*19)*2
 	(+)*256 (>)*19 (+.)*38 > (+.)*70 (<)*20
 	(+)*256 (>)*20 (+.)*108 (<)*20
@@ -704,7 +704,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*56 > (+.)*43 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*15
-  ]+
+  ]+ <(-)*29>                      anti-careless flag decrementation
   (>)*9(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -717,10 +717,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21.[-].[.++-------[...-]]]]]]]][[...-]])*6
 ]+>                        look again! 12
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*10
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*20 (+.)*108 (<)*20)*2
 	(+)*256 (>)*20 (+.)*40 > (+.)*67 (<)*21
 	(+)*256 (>)*21 (+.)*107 (<)*21
@@ -743,7 +743,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*78
   ]-
 <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*20 (+.)*108 (<)*20)*2
 	(+)*256 (>)*20 (+.)*40 > (+.)*67 (<)*21
 	(+)*256 (>)*21 (+.)*107 (<)*21
@@ -764,7 +764,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*20 > (+.)*79 (<)*29
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*78
-  ]+
+  ]+ <(-)*29>                      anti-careless flag decrementation
  (>)*10(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -777,10 +777,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*5
 ]>                       look again! 13
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*11
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*21 (+.)*107 (<)*21)*2
 	(+)*256 (>)*21 (+.)*42 > (+.)*64 (<)*22
 	(+)*256 (>)*22 (+.)*106 (<)*22
@@ -801,7 +801,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*42
   ]-
 <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*21 (+.)*107 (<)*21)*2
 	(+)*256 (>)*21 (+.)*42 > (+.)*64 (<)*22
 	(+)*256 (>)*22 (+.)*106 (<)*22
@@ -820,7 +820,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*83 > (+.)*16 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*42
-  ]+
+  ]+ <(-)*29>                      anti-careless flag decrementation
  (>)*11(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -833,10 +833,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*21(+.)*12.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21(+.)*12.[-].[.++-------[...-]]]]]]]][[...-]])*5
 ]>                        look again! 14
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*12
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*22 (+.)*106 (<)*22)*2
 	(+)*256 (>)*22 (+.)*44 > (+.)*61 (<)*23
 	(+)*256 (>)*23 (+.)*105 (<)*23
@@ -855,7 +855,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*3
   ]-
 <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*22 (+.)*106 (<)*22)*2
 	(+)*256 (>)*22 (+.)*44 > (+.)*61 (<)*23
 	(+)*256 (>)*23 (+.)*105 (<)*23
@@ -872,7 +872,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*44 > (+.)*55 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*3
-  ]+
+  ]+ <(-)*29>                      anti-careless flag decrementation
  (>)*12(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -885,10 +885,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*21(+.)*12.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21(+.)*12.[-].[.++-------[...-]]]]]]]][[...-]]>)*4
 ]>                        look again! 15
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*13
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*23 (+.)*105 (<)*23)*2
 	(+)*256 (>)*23 (+.)*46 > (+.)*58 (<)*24
 	(+)*256 (>)*24 (+.)*104 (<)*24
@@ -912,7 +912,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*60
   ]-
 <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*23 (+.)*105 (<)*23)*2
 	(+)*256 (>)*23 (+.)*46 > (+.)*58 (<)*24
 	(+)*256 (>)*24 (+.)*104 (<)*24
@@ -934,7 +934,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*20
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*60
-  ]+
+  ]+ <(-)*29>                      anti-careless flag decrementation
  (>)*13(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -948,10 +948,10 @@ the two minuses in the previous line are there on purpose
 	(>)*5(>[[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]])*4
  
 ]+>                       look again! 16
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*14
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*24 (+.)*104 (<)*24)*2
 	(+)*256 (>)*24 (+.)*48 > (+.)*55 (<)*25
 	(+)*256 (>)*25 (+.)*103 (<)*25
@@ -973,7 +973,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*16
   ]-
 <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*24 (+.)*104 (<)*24)*2
 	(+)*256 (>)*24 (+.)*48 > (+.)*55 (<)*25
 	(+)*256 (>)*25 (+.)*103 (<)*25
@@ -993,7 +993,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*57 > (+.)*42 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*16
-  ]+
+  ]+ <(-)*29>                      anti-careless flag decrementation
  (>)*14(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -1006,10 +1006,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*3
 ]>                        look again! 17
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*15
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*25 (+.)*103 (<)*25)*2
 	(+)*256 (>)*25 (+.)*(+.)*50 > (+.)*52 (<)*26
 	((+)*256 (>)*26 (+.)*102 (<)*26)*2
@@ -1022,7 +1022,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*68
   ]-
 <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*25 (+.)*103 (<)*25)*2
 	(+)*256 (>)*25 (+.)*(+.)*50 > (+.)*52 (<)*26
 	((+)*256 (>)*26 (+.)*102 (<)*26)*2
@@ -1034,6 +1034,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*68
   ]+
+ <(-)*29>                      anti-careless flag decrementation
  (>)*15(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -1047,10 +1048,10 @@ the two minuses in the previous line are there on purpose
 	(>)*5(>[[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]])*3
  
 ]>                        look again! 18
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*16
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*26 (+.)*102 (<)*26)*2
 	(+)*256 (>)*26 (+.)*52 > (+.)*49 (<)*27
 	((+)*256 (>)*27 (+.)*101 (<)*27)*2
@@ -1061,7 +1062,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*20
   ]-
 <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*26 (+.)*102 (<)*26)*2
 	(+)*256 (>)*26 (+.)*52 > (+.)*49 (<)*27
 	((+)*256 (>)*27 (+.)*101 (<)*27)*2
@@ -1071,6 +1072,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*20
   ]+
+ <(-)*29>                      anti-careless flag decrementation
  (>)*16(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -1083,10 +1085,10 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*2
 ]>                       look again! 19
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*17
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*27 (+.)*101 (<)*27)*2
 	(+)*256 (>)*27 (+.)*54 > (+.)*46 (<)*28
 	((+)*256 (>)*28 (+.)*100 (<)*28)*2
@@ -1095,7 +1097,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*68
   ]-
 <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*27 (+.)*101 (<)*27)*2
 	(+)*256 (>)*27 (+.)*54 > (+.)*46 (<)*28
 	((+)*256 (>)*28 (+.)*100 (<)*28)*2
@@ -1103,6 +1105,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*68
  ]+
+ <(-)*29>                      anti-careless flag decrementation
  (>)*17(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
@@ -1115,22 +1118,23 @@ the two minuses in the previous line are there on purpose
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*2
 ]>                        look again! 20
-[<<-(<)*6(-)*33              opponent found; back off fast and build a big decoy
+[<<-(<)*6(-)*74              opponent found; back off fast and build a big decoy
 (<)*18
  +[
-    <<+(.)*60
+    <<+(.)*30
 	((+)*256 (>)*28 (+.)*100 (<)*28)*2
 	(+)*256 (>)*28 (+.)*56 > (+.)*43 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*15
   ]-
 <-[
-    <+(.)*60
+    <+(.)*30
 	((+)*256 (>)*28 (+.)*100 (<)*28)*2
 	(+)*256 (>)*28 (+.)*56 > (+.)*43 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*15
   ]+
+ <(-)*29>                      anti-careless flag decrementation
  (>)*18(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*13
