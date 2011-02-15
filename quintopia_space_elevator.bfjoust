@@ -1,4 +1,4 @@
-space_elevator by quintopia, version 1_5_0
+space_elevator by quintopia, version 1_5_1
 planned for future versions: more decoys if needed, backup attacks to handle timing attacks, second tripwire checks for fast-to-slow rushers, possible smaller first decoy to arrive at tripwires on time
 the two minuses in the previous line are there on purpose
 
@@ -270,8 +270,8 @@ the two minuses in the previous line are there on purpose
  ]+
   >>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
     <(-)*33
-    <(-)*32
-    <(+)*32
+    <(-)*22
+    <(+)*22
  >>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]])*9
 ]>                        look again! 6
@@ -351,9 +351,9 @@ the two minuses in the previous line are there on purpose
  ]-
   >>>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
      <(-)*33
-     <(-)*33
-     <(+)*42
-     <(-)*42
+     <(-)*23
+     <(+)*12
+     <(-)*12
  >>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]]>)*8
 ]>                       look again! 7
@@ -428,10 +428,10 @@ the two minuses in the previous line are there on purpose
 ]+
   >>>>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*42
-      <(+)*42
+      <(-)*23
+      <(+)*23
+      <(-)*12
+      <(+)*12
  >>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]])*8
 ]+>                        look again! 8
@@ -502,11 +502,11 @@ the two minuses in the previous line are there on purpose
  ]-
   (>)*6(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*42
-      <(-)*42
+      <(-)*23
+      <(+)*23
+      <(-)*13
+      <(+)*12
+      <(-)*12
  >>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]]>)*7
 ]>                        look again! 9
@@ -574,12 +574,12 @@ the two minuses in the previous line are there on purpose
 
   (>)*7(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*42
-      <(-)*42
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*12
+      <(-)*12
  >>>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*15.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*15.[-].[.++-------[...-]]]]]]]][[...-]])*7
 ]>                       look again! 10
@@ -642,13 +642,13 @@ the two minuses in the previous line are there on purpose
 
   (>)*8(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*42
-      <(+)*42
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*12
+      <(+)*12
  >>>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*6
 ]>                        look again! 11
@@ -707,13 +707,13 @@ the two minuses in the previous line are there on purpose
   ]+
   (>)*9(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*42
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*12
  >>>>>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21.[-].[.++-------[...-]]]]]]]][[...-]])*6
 ]+>                        look again! 12
@@ -767,13 +767,13 @@ the two minuses in the previous line are there on purpose
   ]+
  (>)*10(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*43
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*5
 ]>                       look again! 13
@@ -823,13 +823,13 @@ the two minuses in the previous line are there on purpose
   ]+
  (>)*11(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*43
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
  >>>>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*21(+.)*12.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21(+.)*12.[-].[.++-------[...-]]]]]]]][[...-]])*5
 ]>                        look again! 14
@@ -875,13 +875,13 @@ the two minuses in the previous line are there on purpose
   ]+
  (>)*12(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*43
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*21(+.)*12.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*21(+.)*12.[-].[.++-------[...-]]]]]]]][[...-]]>)*4
 ]>                        look again! 15
@@ -937,13 +937,13 @@ the two minuses in the previous line are there on purpose
   ]+
  (>)*13(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*43
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
  >>>>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]])*4
  
@@ -996,13 +996,13 @@ the two minuses in the previous line are there on purpose
   ]+
  (>)*14(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*43
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*3
 ]>                        look again! 17
@@ -1036,13 +1036,13 @@ the two minuses in the previous line are there on purpose
   ]+
  (>)*15(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*43
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
  >>>>>>>>>(+)*5>(-)*5
 	(>)*5(>[[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]])*3
  
@@ -1073,13 +1073,13 @@ the two minuses in the previous line are there on purpose
   ]+
  (>)*16(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*43
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*2
 ]>                       look again! 19
@@ -1105,13 +1105,13 @@ the two minuses in the previous line are there on purpose
  ]+
  (>)*17(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*43
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6([[[[-[++[(+)*12(+.)*21.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+)*12(+.)*21.[-].[.++-------[...-]]]]]]]][[...-]]>)*2
 ]>                        look again! 20
@@ -1133,13 +1133,13 @@ the two minuses in the previous line are there on purpose
   ]+
  (>)*18(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
-      <(+)*33
-      <(-)*33
-      <(+)*33
-      <(+)*33
-      <(-)*43
-      <(+)*43
+      <(-)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
+      <(+)*13
+      <(-)*13
+      <(+)*13
  >>>>>>>>>(+)*5>(-)*5
 	(>)*6[[[[-[++[(+.)*35.[.-].[.++-------[...-]]]]]]]][[...-]]>[[[[-[++[(+.)*35.[-].[.++-------[...-]]]]]]]][[...-]]
  
