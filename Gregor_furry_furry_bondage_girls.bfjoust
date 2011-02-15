@@ -15,7 +15,7 @@ KjQ_IjsKCiMgTm93IG1vdmUgb24sIGxlYXZpbmcgYSBkaWZmZXJlbnQgdHJhaWwgb2YgZGVjb3lz
 IHBlciBsZW5ndGgKZm9yICgkaSA9IDEwOyAkaSA8PSAzMDsgJGkrKykgewogICAgcHJpbnQgIlsi
 OwoKICAgICMgSWYgd2UncmUgaGVyZSwgdGhlcmUgd2FzIHNvbWV0aGluZyBhdCB0aGlzIGxlbmd0
 aC4gTGVhdmUgdGhlIGFwcHJvcHJpYXRlIG51bWJlciBvZiBkZWNveXMgLi4uCiAgICBpZiAoJGkg
-PiAxNCkgewogICAgICAgIHByaW50ICIoPCkqOCI7CiAgICAgICAgZm9yICgkaiA9IDA7ICRqIDwg
+PiAxNikgewogICAgICAgIHByaW50ICIoPCkqOCI7CiAgICAgICAgZm9yICgkaiA9IDA7ICRqIDwg
 JGkgLSAxMCAmJiAkaiA8PSAkI2RlY295c2l6ZTsgJGorKykgewogICAgICAgICAgICBwcmludCAi
 PCgiIC4gKCgkaiAlIDMgPT0gMCkgPyAiKyIgOiAiLSIpIC4gIikqIiAuICRkZWNveXNpemVbJGpd
 OwogICAgICAgIH0KICAgICAgICBmb3IgKCRqID0gMDsgJGogPCAkaSAtIDEwICYmICRqIDw9ICQj
@@ -137,7 +137,7 @@ __END__
       }])%8 }])%4
       }])%8 }])%4 +>
     )*21
-]+>[(<)*8<(+)*37<(-)*37<(-)*23<(+)*23<(-)*11>>>>>(>)*8    (
+]+>[(<)*8<(+)*53<(-)*53<(+)*21<(-)*21>>>>(>)*8    (
       ([+{ ([-{ (-)*100(-.)*32 >
       ([+{ ([-{ (-)*100(-.)*32 >
       ([+{ ([-{ (-)*100(-.)*32 >
@@ -156,7 +156,7 @@ __END__
       }])%8 }])%4
       }])%8 }])%4 +>
     )*21
-]->[(<)*8<(+)*37<(-)*37<(-)*23<(+)*23<(-)*11<(-)*11>>>>>>(>)*8    (
+]->[(<)*8<(+)*53<(-)*53<(+)*21<(-)*21>>>>(>)*8    (
       ([+{ ([-{ (-)*100(-.)*32 >
       ([+{ ([-{ (-)*100(-.)*32 >
       ([+{ ([-{ (-)*100(-.)*32 >
