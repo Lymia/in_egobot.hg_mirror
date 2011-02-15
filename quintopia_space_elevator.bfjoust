@@ -1,5 +1,5 @@
-space_elevator by quintopia, version 1_4
-planned for future versions: more decoys if needed, backup attacks to handle timing attacks, second tripwire checks for fast-to-slow rushers, possible smaller first decoy to arrive at tripwires on time
+space_elevator by quintopia, version 1_4_1
+planned for future versions: more decoys if needed, backup attacks to handle timing attacks, second tripwire checks for fast_to_slow rushers, possible smaller first decoy to arrive at tripwires on time
 
 >+>-(>)*6                 leave two tripwires and go find the other guy
 +>                        i'll just leave this here
@@ -1126,5 +1126,6 @@ planned for future versions: more decoys if needed, backup attacks to handle tim
  
 ]>                        look again! 21
 (-)*116(.-)*256(..-)*256[[..-]]              yeah, let's not jump through hoops when we're already at the flag :P
+
 
 
