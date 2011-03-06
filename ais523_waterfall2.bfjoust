@@ -19,7 +19,7 @@ Interrupt decoy setup to check tripwire
   The extra addition at the start is a modification to work against
   reverse offset clears on one polarity
   <<<(+)*64
-  ((+)*128(>)* 9(.+)*55(<)* 9)*6
+  ((+)*128(>)*9 (.+)*55(<)*9 )*6
   ((+)*128(>)*10(.+)*54(<)*10)*6
   ((+)*128(>)*11(.+)*53(<)*11)*6
   ((+)*128(>)*12(.+)*52(<)*12)*6
@@ -52,7 +52,7 @@ Interrupt decoy setup to check tripwire
   The extra addition at the start is a modification to work against
   reverse offset clears on one polarity
   <<<(+)*64
-  ((+)*128(>)* 9(.+)*55(<)* 9)*6
+  ((+)*128(>)*9 (.+)*55(<)*9 )*6
   ((+)*128(>)*10(.+)*54(<)*10)*6
   ((+)*128(>)*11(.+)*53(<)*11)*6
   ((+)*128(>)*12(.+)*52(<)*12)*6
@@ -139,8 +139,8 @@ Use cells 8 and 3 as reverse tripwires to await the enemy
     Try to triplock the opponent; we can use a longer algorithm
     because this isn't repeated as much as the inline triplocks are
     <<
-    ([[](+)*100(>)* 8-(.-)*41(<)* 8{
-        ([[](+)*100(>)* 9-(.-)*40(<)* 9{
+    ([[](+)*100(>)*8 -(.-)*41(<)*8 {
+        ([[](+)*100(>)*9 -(.-)*40(<)*9 {
             ([[](+)*100(>)*10-(.-)*39(<)*10{
                 ([[](+)*100(>)*11-(.-)*38(<)*11{
                     ([[](+)*100(>)*12-(.-)*37(<)*12{
@@ -185,7 +185,7 @@ Use cells 8 and 3 as reverse tripwires to await the enemy
     it ends up here on one polarity
     Use defend7 tuned to that polarity to lock and destroy it
     <
-    ((-)*128(>)* 9(.+)*55(<)* 9)*6
+    ((-)*128(>)*9 (.+)*55(<)*9 )*6
     ((-)*128(>)*10(.+)*54(<)*10)*6
     ((-)*128(>)*11(.+)*53(<)*11)*6
     ((-)*128(>)*12(.+)*52(<)*12)*6
