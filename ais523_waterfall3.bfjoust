@@ -1,4 +1,4 @@
-Set up decoys and tripwires
+1Set up decoys and tripwires
 
 Cell 2: gap to ease triplock setup
 Cell 3: reverse tripwire
@@ -415,5 +415,6 @@ Assume the tape isn't length 10 or the enemy decoys would have hit
 our tripwire
 Lay a trail to help outrun enemies that wait for us then switch to a rush
 >+++++
-(>[+[+[+[----[-[-[(-)*116[+--][..+++++------[..+++++------]]>[..+++++------[..+++++------]]]]]]]]][..+++++------[..+++++------]]-----)*20
+(>[+[+[+[----[-[-[(-)*116[+--][..++++-----[..+++++------]]>[..+++++------[..+++++------]]]]]]]]][..+++++------[..+++++------]]-----)*20
+
 
