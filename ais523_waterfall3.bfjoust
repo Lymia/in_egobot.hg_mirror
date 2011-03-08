@@ -1,4 +1,4 @@
-1Set up decoys and tripwires
+Set up decoys and tripwires
 
 Cell 2: gap to ease triplock setup
 Cell 3: reverse tripwire
@@ -403,7 +403,7 @@ Use cells 8 and 3 as reverse tripwires to await the enemy
       ((-)*128(>)*27(.+)*37(<)*27)*8
       ((-)*128(>)*28(.+)*36(<)*28)*8
       ((-)*128(>)*29(.+)*35(<)*29)*8
-    ]+(.)*13)*10>>>>>
+    ]+(.)*12)*10>>>>>
 )*7
 
 We're playing against defence; use a counterdefence clear
@@ -416,5 +416,4 @@ our tripwire
 Lay a trail to help outrun enemies that wait for us then switch to a rush
 >+++++
 (>[+[+[+[----[-[-[(-)*116[+--][..++++-----[..+++++------]]>[..+++++------[..+++++------]]]]]]]]][..+++++------[..+++++------]]-----)*20
-
 
