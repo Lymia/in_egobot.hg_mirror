@@ -1,4 +1,4 @@
->+>->+>->
+>+++>->>>
 Enemy at 5; tape size 10
 [
    Attack
@@ -199,3 +199,4 @@ Enemy at 29
 
 Enemy at 30; We got their flag; take it out
 [[+][-][+]]
+
