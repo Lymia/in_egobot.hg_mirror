@@ -6,13 +6,13 @@ planned for future versions: more decoys if needed, backup attacks to handle tim
 the two minuses in the previous line are there on purpose
 
 >+>->>>+>>>                 leave two tripwires and go find the other guy
-+>                        i'll just leave this here
++>  9                      i'll just leave this here
 [(<)*6(-)*50<(+)*50       opponent found; back off fast and build a big decoy; maybe we can afford two on short tape
 	(>)*6(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*9(+)*70(>)*10(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-])*18
-]>                        look again! 2
+]>                        look again! 10
 [(<)*7(-)*50<(+)*50       opponent found; back off fast and build a big decoy; maybe we can afford two on short tape
 	(>)*7(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*10(+)*70(>)*11(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-])*17
-]>                        look again! 3
+]>                        look again! 11
 [(<)*7(-)*50              opponent found; back off fast and build a big decoy
 <<
  +[                       tripwire tripped! the opponent is working on our flag! 
@@ -101,7 +101,7 @@ the two minuses in the previous line are there on purpose
 >>(-)*55                 tripwire not tripped! assume opponent is defender or slow rush
 <(+)*55
 	(>)*8(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*11(+)*70(>)*12(>[(+)*4([-{[(-)*40[+][-][+]]}[-]])%8[+]][-][+][-])*16
-]+>                       look again! 4
+]+>                       look again! 12
 [(<)*7(-)*50              opponent found; back off fast and build a big decoy
 <<<
  +[
@@ -154,8 +154,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*14 (+.)*114 (<)*14
 	(+)*256 (>)*14 (+.)*78 > (+.)*35 (<)*15
 	(+)*256 (>)*15 (+.)*113 (<)*15
-	(+
-   >>>(-)*25)*256 (>)*15 (+.)*108 > (+.)*4 (<)*16
+	(+)*256 (>)*15 (+.)*108 > (+.)*4 (<)*16
 	((+)*256 (>)*16 (+.)*112 (<)*16)*2
 	(+)*256 (>)*16 (+.)*28 > (+.)*83 (<)*17
 	(+)*256 (>)*17 (+.)*111 (<)*17
@@ -191,9 +190,9 @@ the two minuses in the previous line are there on purpose
    <(-)*55
 	(>)*9(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*12(-)*70(>)*13(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-])*16
 
-]>                        look again! 5
-[(<)*8(-)*33              opponent found; back off fast and build a big decoy
-<<<
+]>                        look again! 13
+[(<)*7(-)*50              opponent found; back off fast and build a big decoy
+<<<<
  +[
                           tripwire tripped!
     <<+(.)*60               board is 14 wide
@@ -270,14 +269,14 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*81
  ]+
-  >>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
-    <(-)*33
-    <(-)*32
-    <(+)*32
-	(>)*11(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-])*21
-]>                        look again! 6
-[(<)*8(-)*33              opponent found; back off fast and build a big decoy
-<<<<
+ >>>>(+)*55                  tripwire not tripped! assume opponent is defender or slow rush
+    <(-)*55
+    <(-)*55
+    <(+)*55
+	(>)*11(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*14(+)*70(>)*15(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-])*15
+]>                        look again! 14
+[(<)*7(-)*50              opponent found; back off fast and build a big decoy
+<<<<<
  +[
                           tripwire tripped!
     <<+(.)*60               board is 15 wide
@@ -350,15 +349,15 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*60
  ]-
-  >>>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
+ (>)*5(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
      <(-)*55
      <(-)*55
      <(+)*55
      <(-)*55
-	(>)*13(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-])*21
-]>                       look again! 7
-[(<)*8(-)*33              opponent found; back off fast and build a big decoy
-(<)*5
+	(>)*12(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*15(-)*70(>)*16(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-])*14
+]>                       look again! 15
+[(<)*7(-)*50              opponent found; back off fast and build a big decoy
+(<)*6
  +[
                           you get the idea
      <<+(.)*60
@@ -432,7 +431,7 @@ the two minuses in the previous line are there on purpose
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*13(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-])*21
+	(>)*14(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*15(+)*70(>)*16(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-])*14
 ]+>                        look again! 8
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<)*6
