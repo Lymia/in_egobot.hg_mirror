@@ -98,6 +98,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*22
    ]+
+<(-)*7>
 
 >>(-)*55                 tripwire not tripped! assume opponent is defender or slow rush
 <(+)*55
@@ -186,6 +187,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*5
   ]-
+<(-)*7>
 
  >>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
    <(-)*55
@@ -271,6 +273,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*81
  ]+
+<(-)*7>
   >>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
     <(-)*33
     <(-)*32
@@ -351,6 +354,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*60
  ]-
+<(-)*7>
   >>>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
      <(-)*55
      <(-)*55
@@ -427,6 +431,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*35
 ]+
+<(-)*7>
   >>>>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*55
@@ -500,6 +505,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*9
  ]-
+<(-)*7>
   (>)*6(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -570,6 +576,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*78
   ]-
+<(-)*7>
 
   (>)*7(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
@@ -637,6 +644,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*48
    ]+
+<(-)*7>
 
   (>)*8(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
@@ -702,6 +710,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*15
   ]+
+<(-)*7>
   (>)*9(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -761,6 +770,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*78
   ]+
+<(-)*7>
  (>)*10(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -816,6 +826,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*42
   ]+
+<(-)*7>
  (>)*11(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -867,6 +878,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*3
   ]+
+<(-)*7>
  (>)*12(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -928,6 +940,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*60
   ]+
+<(-)*7>
  (>)*13(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -986,6 +999,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*16
   ]+
+<(-)*7>
  (>)*14(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -1025,6 +1039,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*68
   ]+
+<(-)*7>
  (>)*15(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -1061,6 +1076,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*20
   ]+
+<(-)*7>
  (>)*16(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -1092,6 +1108,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*68
  ]+
+<(-)*7>
  (>)*17(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
@@ -1119,6 +1136,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*15
   ]+
+<(-)*7>
  (>)*18(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
