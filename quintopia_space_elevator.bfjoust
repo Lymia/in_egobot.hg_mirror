@@ -1,18 +1,21 @@
-space_elevator by quintopia, version 1_6_2
+space_elevator by quintopia, version 1_6_5
 leaves size 2 trail later on medium to long tapes to beat waterfall3
 got rid of 3cycle clears, may add one back later for first big clear to confuse defenders
 interrupted rush to add more decoys on medium tape
 clear loops end with exactly two closing braces to defeat triplocks
-planned for future versions: more decoys if needed, backup attacks to handle timing attacks, second tripwire checks for fasttoslow rushers, possible smaller first decoy to arrive at tripwires on time
-the two minuses in the previous line are there on purpose
+bump flag by more later and not at all earlier
+switch polarity of clear after 2 cells on all tape lengths
+lay a trail between first decoy and reverse tripwires to slow opponents who manage to get behind first decoy
+build up first reverse tripwire into small decoy to slow fast opponents on short tapes
+ideas for future versions: backup attacks to handle timing attacks, second tripwire checks for fast to slow rushers,
 
 >+>->>>+>>>                 leave two tripwires and go find the other guy
 +>                        i'll just leave this here
 [(<)*6(-)*50<(+)*50       opponent found; back off fast and build a big decoy; maybe we can afford two on short tape
-	(>)*6(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*9(+)*70(>)*10(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+	(>)*6(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*9(+)*70<(-)*9>(>)*10(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                        look again! 2
 [(<)*7(-)*50<(+)*50       opponent found; back off fast and build a big decoy; maybe we can afford two on short tape
-	(>)*7(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*10(+)*70(>)*11(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*17
+	(>)*7(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*10(+)*70<(-)*9>(>)*11(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*17
 ]>                        look again! 3
 [(<)*7(-)*50              opponent found; back off fast and build a big decoy
 <<
@@ -98,11 +101,11 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*22
    ]+
-<(-)*9>
+
 
 >>(-)*55                 tripwire not tripped! assume opponent is defender or slow rush
 <(+)*55
-	(>)*8(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*11(+)*70(>)*12(>[(+)*4([-{[(-)*40[+][-][+]]}[-]])%8[+]][-][+][-]++)*16
+	(>)*8(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*11(+)*70<(-)*9>(>)*12(>[(+)*4([-{[(-)*40[+][-][+]]}[-]])%8[+]][-][+][-]++)*16
 ]+>                       look again! 4
 [(<)*7(-)*50              opponent found; back off fast and build a big decoy
 <<<
@@ -187,12 +190,11 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*5
   ]-
-<(-)*9>
 
  >>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
    <(-)*55
    <(-)*55
-	(>)*9(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*12(-)*70(>)*13(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*16
+	(>)*9(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*12(-)*70<(-)*9>(>)*13(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*16
 
 ]>                        look again! 5
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
