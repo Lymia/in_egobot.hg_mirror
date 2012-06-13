@@ -56,7 +56,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*63 > (+.)*36 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*22
-  ]-
+  ]-----
  <-[                      tripwire tripped! the opponent is working on our flag! 111 cycles into program; opponent cannot have reduced flag by more than 47; wait 98 and start 2-cycle defend
     <+(.)*60              board is 12 wide
 	((+)*256 (>)*11 (+.)*117 (<)*11)*2
@@ -144,7 +144,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*46 > (+.)*53 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*5
-  ]-
+  ]-----
  <-[
                           tripewire tripped!
      <+(.)*60              board is 13 wide
@@ -232,7 +232,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*23 > (+.)*76 (<)*29
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*81
- ]-
+ ]-----
 <-[
                           tripwire tripped!
     <+(.)*60               board is 14 wide
@@ -314,7 +314,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*2 > (+.)*97 (<)*29
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*60
- ]+
+ ]+++++
 <-[
                           tripwire tripped!
     <+(.)*60               board is 15 wide
@@ -468,7 +468,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*9
 
- ]+
+ ]+++++
 <-[
      <+(.)*60
 	((+)*256 (>)*16 (+.)*112 (<)*16)*2
@@ -540,7 +540,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*78
 
- ]+
+ ]+++++
 <-[
      <+(.)*60
 	((+)*256 (>)*17 (+.)*111 (<)*17)*2
@@ -609,7 +609,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*89 > (+.)*10 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*48
-   ]-
+   ]-----
  <-[
     <+(.)*60
 	((+)*256 (>)*18 (+.)*110 (<)*18)*2
@@ -676,7 +676,7 @@ the two minuses in the previous line are there on purpose
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*15
 
-  ]-
+  ]-----
 <-[  
     <+(.)*60
 	((+)*256 (>)*19 (+.)*109 (<)*19)*2
@@ -737,7 +737,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*20 > (+.)*79 (<)*29
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*78
-  ]-
+  ]-----
 <-[
     <+(.)*60
 	((+)*256 (>)*20 (+.)*108 (<)*20)*2
@@ -794,7 +794,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*83 > (+.)*16 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*42
-  ]-
+  ]-----
 <-[
     <+(.)*60
 	((+)*256 (>)*21 (+.)*107 (<)*21)*2
@@ -847,7 +847,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*44 > (+.)*55 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*3
-  ]-
+  ]-----
 <-[
     <+(.)*60
 	((+)*256 (>)*22 (+.)*106 (<)*22)*2
@@ -903,7 +903,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*29 (+.)*20
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*60
-  ]-
+  ]-----
 <-[
     <+(.)*60
 	((+)*256 (>)*23 (+.)*105 (<)*23)*2
@@ -963,7 +963,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*57 > (+.)*42 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*16
-  ]-
+  ]-----
 <-[
     <+(.)*60
 	((+)*256 (>)*24 (+.)*104 (<)*24)*2
@@ -1011,7 +1011,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*10 > (+.)*89 (<)*29
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*68
-  ]-
+  ]-----
 <-[
     <+(.)*60
 	((+)*256 (>)*25 (+.)*103 (<)*25)*2
@@ -1049,7 +1049,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*61 > (+.)*38 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*20
-  ]-
+  ]-----
 <-[
     <+(.)*60
 	((+)*256 (>)*26 (+.)*102 (<)*26)*2
@@ -1082,7 +1082,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*10 > (+.)*89 (<)*29
 	(+)*256 (>)*29 (+.)*99 (<)*29
 	(+)*256 (>)*29 (+.)*68
-  ]-
+  ]-----
 <-[
     <+(.)*60
 	((+)*256 (>)*27 (+.)*101 (<)*27)*2
@@ -1111,7 +1111,7 @@ the two minuses in the previous line are there on purpose
 	(+)*256 (>)*28 (+.)*56 > (+.)*43 (<)*29
 	((+)*256 (>)*29 (+.)*99 (<)*29)*2
 	(+)*256 (>)*29 (+.)*15
-  ]-
+  ]-----
 <-[
     <+(.)*60
 	((+)*256 (>)*28 (+.)*100 (<)*28)*2
@@ -1132,3 +1132,4 @@ the two minuses in the previous line are there on purpose
  
 ]>                        look again! 21
 (-)*116(.-)*256(..-)*256[[..-]]              yeah, let's not jump through hoops when we're already at the flag :P
+
