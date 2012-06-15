@@ -60,7 +60,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
      (>)*10>++++[-[-[-[-[-[-[-[-[(-)*60(<)*12(+)*256(>)*12(-)*60[-]((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1]]]]]]]]](<)*12(.)*60(+)*256(>)*12((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1
   ]-
 
- >>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
+ >>>(+)*55                  tripwire not tripped! assume opponent is defender or slow rush
    <(-)*55
    <(-)*55
 	(>)*9(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*12(-)*70<(-)*9>(>)*13(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*16
@@ -77,10 +77,10 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
     (>)*11>++++[-[-[-[-[-[-[-[-[(-)*60(<)*13(+)*256(>)*13(-)*60[-]((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1]]]]]]]]](<)*13(.)*60(+)*256(>)*13((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1
  ]+
 <(-)*9>
-  >>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
-    <(-)*33
-    <(-)*32
-    <(+)*32
+  >>>(+)*55                  tripwire not tripped! assume opponent is defender or slow rush
+    <(-)*55
+    <(-)*55
+    <(+)*55
 	(>)*11(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*19
 ]>                        look again! 6
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
@@ -94,7 +94,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
     (>)*12>++++[-[-[-[-[-[-[-[-[(-)*60(<)*14(+)*256(>)*14(-)*60[-]((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1]]]]]]]]](<)*14(.)*60(+)*256(>)*14((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1
  ]-
 <(-)*9>
-  >>>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
+  >>>>(+)*55                  tripwire not tripped! assume opponent is defender or slow rush
      <(-)*55
      <(-)*55
      <(+)*55
@@ -112,7 +112,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
 ]+
 <(-)*9>
   >>>>>(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
-      <(-)*33
+      <(-)*55
       <(-)*55
       <(+)*55
       <(-)*55
@@ -131,7 +131,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
 <(-)*9>
   (>)*6(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
-      <(-)*33
+      <(-)*55
       <(+)*55
       <(-)*55
       <(+)*55
@@ -152,7 +152,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
   (>)*7(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
-      <(+)*33
+      <(+)*55
       <(-)*55
       <(+)*55
       <(+)*55
@@ -173,7 +173,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(-)*33
       <(-)*33
       <(+)*33
-      <(-)*33
+      <(-)*55
       <(+)*55
       <(+)*55
       <(-)*55
@@ -194,7 +194,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(-)*33
       <(-)*33
       <(+)*33
-      <(-)*33
+      <(-)*55
       <(+)*55
       <(+)*55
       <(-)*55
@@ -213,8 +213,8 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
  (>)*10(+)*33                  tripwire not tripped! assume opponent is defender or slow rush
       <(-)*33
       <(-)*33
-      <(+)*33
-      <(-)*33
+      <(+)*55
+      <(-)*55
       <(+)*55
       <(+)*55
       <(-)*55
@@ -234,12 +234,13 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(-)*33
       <(-)*33
       <(+)*33
-      <(-)*33
+      <(-)*55
       <(+)*55
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+      <(-)*55
+	(>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                        look again! 14
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*12
