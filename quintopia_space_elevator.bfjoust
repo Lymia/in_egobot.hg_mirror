@@ -1,6 +1,7 @@
-space_elevator by quintopia, version 2_0_0
+space_elevator by quintopia, version 2_0_1
 change locking loop to undermine clear with flag repair (thanks ais523)
 now checks tripwires on short tape
+leaves size 4 trail when returning to poked position on short to medium tape
 leaves size 2 trail later on medium to long tapes to beat waterfall3
 got rid of 3cycle clears, may add one back later for first big clear to confuse defenders
 interrupted rush to add more decoys on medium tape
@@ -22,7 +23,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
    ]
 
      >(+)*50       
-	(>)*6(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*9(+)*70<(-)*9>(>)*10(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+        (>)*6(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*9(+)*70<(-)*9>(>)*10(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                        look again! 2
 [(<)*7(-)*50<             opponent found; back off fast and build a big decoy; maybe we can afford two on short tape
   +[
@@ -33,7 +34,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
    ]
 
      >(+)*50
-	(>)*7(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*10(+)*70<(-)*9>(>)*11(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*17
+        (>)*2(++++>)*5(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*10(+)*70<(-)*9>(>)*11(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*17
 ]>                        look again! 3
 [(<)*7(-)*50              opponent found; back off fast and build a big decoy
 <<
@@ -47,7 +48,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
 
 >>(-)*55                 tripwire not tripped! assume opponent is defender or slow rush
 <(+)*55
-	(>)*8(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*11(+)*70<(-)*9>(>)*12(>[(+)*4([-{[(-)*40[+][-][+]]}[-]])%8[+]][-][+][-]++)*16
+        (>)*3(++++>)*5(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*11(+)*70<(-)*9>(>)*12(>[(+)*4([-{[(-)*40[+][-][+]]}[-]])%8[+]][-][+][-]++)*16
 ]+>                       look again! 4
 [(<)*7(-)*50              opponent found; back off fast and build a big decoy
 <<<
@@ -63,7 +64,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
  >>>(+)*55                  tripwire not tripped! assume opponent is defender or slow rush
    <(-)*55
    <(-)*55
-	(>)*9(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*12(-)*70<(-)*9>(>)*13(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*16
+        (>)*4(++++>)*5(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*12(-)*70<(-)*9>(>)*13(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*16
 
 ]>                        look again! 5
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
@@ -81,7 +82,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
     <(-)*55
     <(-)*55
     <(+)*55
-	(>)*11(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*19
+        (>)*5(++++>)*6(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*19
 ]>                        look again! 6
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 <<<<
@@ -99,7 +100,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
      <(-)*55
      <(+)*55
      <(-)*55
-	(>)*13(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+        (>)*6(++++>)*7(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                       look again! 7
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*5
@@ -117,7 +118,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*13(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+        (>)*7(++++>)*6(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]+>                        look again! 8
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*6
@@ -136,7 +137,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(-)*55
       <(+)*55
       <(-)*55
-	(>)*15(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+        (>)*8(++++>)*6(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                        look again! 9
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*7
@@ -157,7 +158,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(+)*55
       <(-)*55
-	(>)*15(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+        (>)*9(++++>)*6(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                       look again! 10
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*8
@@ -178,7 +179,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+        (>)*10(++++>)*6(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                        look again! 11
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*9
@@ -199,7 +200,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*54
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+        (>)*10(++++>)*6(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]+>                        look again! 12
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*10
@@ -219,7 +220,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+        (>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                       look again! 13
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*11
@@ -240,7 +241,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(-)*55
       <(+)*55
       <(-)*55
-	(>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+        (>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                        look again! 14
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*12
@@ -260,7 +261,8 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+      <(+)*55
+        (>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                        look again! 15
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*13
@@ -280,7 +282,8 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+      <(+)*55
+        (>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
  
 ]+>                       look again! 16
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
@@ -301,7 +304,8 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+      <(+)*55
+        (>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                        look again! 17
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*15
@@ -321,7 +325,8 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+      <(+)*55
+        (>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
  
 ]>                        look again! 18
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
@@ -342,7 +347,8 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+      <(+)*55
+        (>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                       look again! 19
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*17
@@ -362,7 +368,8 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+      <(+)*55
+        (>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
 ]>                        look again! 20
 [(<)*8(-)*33              opponent found; back off fast and build a big decoy
 (<+)*18
@@ -382,9 +389,11 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
       <(+)*55
       <(-)*55
       <(+)*55
-	(>)*16(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+      <(+)*55
+        (>)*17(>[(-)*4([+{[(+)*40[-][+][-]]}[-]])%8[+]][-][+][-]++)*2(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
  
 ]>                        look again! 21
 (-)*116(.-)*256(..-)*256[[..-]]              yeah, let's not jump through hoops when we're already at the flag :P
+
 
 
