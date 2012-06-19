@@ -14,7 +14,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
 
 >+>->>>++>>>                 leave two tripwires and go find the other guy
 +>                        i'll just leave this here
-[(<)*6(-)*50<            opponent found; back off fast and build a big decoy; maybe we can afford two on short tape
+[(<)*5(-)*50<<            opponent found; back off fast and build a big decoy; maybe we can afford two on short tape
   +[
      (>)*6>++++[-[-[-[-[-[-[-[-[(-)*60(<)*9(+)*256(>)*9(-)*60[-]((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1]]]]]]]]](<)*9(.)*60(+)*256(>)*9((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1
    ]-----
@@ -22,8 +22,8 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
      (>)*7>++++[-[-[-[-[-[-[-[-[(-)*60(<)*9(+)*256(>)*9(-)*60[-]((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1]]]]]]]]](<)*9(.)*60(+)*256(>)*9((>++++[-[-[-[-[-[-[-[-[(-)*120[-]{}]]]]]]]]])%29)*-1
    ]
 
-     >(+)*50       
-        (>)*6(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*2(<)*9(+)*70<(-)*9>(>)*10(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*18
+     >>(+)*50       
+        (>)*5(>[(-)*4([+{[(+)*30[-][+][-]]}[-]])%8[+]][-][+][-])*1(<)*6<(-)*70<(+)*70<(-)*9>(>)*9(>[(+)*4([-{[(-)*40[+][-][+]]}[+]])%8[-]][-][+][-]++)*19
 ]>                        look again! 2
 [(<)*7(-)*50<             opponent found; back off fast and build a big decoy; maybe we can afford two on short tape
   +[
@@ -394,6 +394,7 @@ ideas for future versions: backup attacks to handle timing attacks, second tripw
  
 ]>                        look again! 21
 (-)*116(.-)*256(..-)*256[[..-]]              yeah, let's not jump through hoops when we're already at the flag :P
+
 
 
 
