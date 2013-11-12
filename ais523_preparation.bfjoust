@@ -1,12 +1,12 @@
 Set seven reverse tripwires; and main decoy; and two decoys beyond that
 to protect against poke/tripwire avoidance
 
-Yes this does automatically lose on tape length 10
+Yes this does automatically lose on tape length ten
 
-The seven reverse tripwires are originally 1 then checked for zero
-before increasing them to size 2 and again before increasing them to
-size 3; to catch enemy clears that happen before we can bring them up
-to size
+The seven reverse tripwires are originally one then checked for zero
+before increasing them to size two and again before increasing them to
+size three; to catch enemy clears that happen before we can bring them
+up to size
 
 (>+)*10<<(+)*15<[+<[+<[+<[+<[+<[+<[+
        +>[+>[+>[+>[+>[+>[+>.
@@ -17,24 +17,24 @@ to size
              probably on a short tape unless the opponent is doing
              risky tripwire avoidance
 
-             If their value is near 0 then they are probably enemy
-             clear attempts /we check 0 1 and 2 in case the enemy
+             If their value is near zero then they are probably enemy
+             clear attempts /we check zero to two in case the enemy
              cleared while we were setting the decoys/; repair our
              flag; then assume that the opponent started at the tenth
              cell due to the rule of nine and reverse offset clear
              from there
 
-             If their value is near 3 then they are probably enemy
-             small decoys and if it is far from 0 or 3 then they are
-             probably enemy large decoys; set decoys on undisturbed
-             cells then try to race via the turtle strategy; because
-             counter turtle measures normally happen at the end of the
-             enemy decoy setup and they are probably in the middle of
-             it; for added speed we use an optimistic clear from cell
-             twelve unless cell two has been changed /in which case
-             the tape length is particularly likely to be eleven due
-             to the high chance that the enemy is there due to a rule
-             of nine clear/
+             If their value is near three then they are probably enemy
+             small decoys and if it is far from zero or three then
+             they are probably enemy large decoys; set decoys on
+             undisturbed cells then try to race via the turtle
+             strategy; because counter turtle measures normally happen
+             at the end of the enemy decoy setup and they are probably
+             in the middle of it; for added speed we use an optimistic
+             clear from cell twelve unless cell two has been changed
+             /in which case the tape length is particularly likely to
+             be eleven due to the high chance that the enemy is there
+             due to a rule of nine clear/
 
              <---[+[+[+[
                  (<)*6
@@ -130,14 +130,15 @@ to size
              pointless because we can't outrace an enemy who has
              decoys; instead try to defend the flag
 
-             We use the defend10 algorithm; waiting 128 cycles first
-             as a reasonable guess as to synchronization; those 128
-             cycles are spent shuddering in order to beat turtles
+             We use the defend ten algorithm; waiting one hundred and
+             twenty eight cycles first as a reasonable guess as to
+             synchronization; those cycles are spent shuddering in
+             order to beat turtles
 
              (<)*6
              <-[
               (<)*1(-)*64(+)*64
-              ((+)*256(>)* 9(.+)*119(<)* 9)*3
+              ((+)*256(>)*9 (.+)*119(<)*9 )*3
               ((+)*256(>)*10(.+)*118(<)*10)*3
               ((+)*256(>)*11(.+)*117(<)*11)*3
               ((+)*256(>)*12(.+)*116(<)*12)*3
@@ -157,14 +158,14 @@ to size
               ((+)*256(>)*26(.+)*102(<)*26)*3
               ((+)*256(>)*27(.+)*101(<)*27)*3
               ((+)*256(>)*28(.+)*100(<)*28)*3
-              ((+)*256(>)*29(.+)* 99(<)*29)*3
+              ((+)*256(>)*29(.+)*99 (<)*29)*3
              ]+
              (>)*7
              (-)*56(+)*56
              (<)*4
              <-[
               (<)*3(-)*64(+)*64
-              ((+)*256(>)* 9(.+)*119(<)* 9)*3
+              ((+)*256(>)*9 (.+)*119(<)*9 )*3
               ((+)*256(>)*10(.+)*118(<)*10)*3
               ((+)*256(>)*11(.+)*117(<)*11)*3
               ((+)*256(>)*12(.+)*116(<)*12)*3
@@ -184,11 +185,11 @@ to size
               ((+)*256(>)*26(.+)*102(<)*26)*3
               ((+)*256(>)*27(.+)*101(<)*27)*3
               ((+)*256(>)*28(.+)*100(<)*28)*3
-              ((+)*256(>)*29(.+)* 99(<)*29)*3
+              ((+)*256(>)*29(.+)*99 (<)*29)*3
              ]
              <-[
               (<)*2(-)*64(+)*64
-              ((+)*256(>)* 9(.+)*119(<)* 9)*3
+              ((+)*256(>)*9 (.+)*119(<)*9 )*3
               ((+)*256(>)*10(.+)*118(<)*10)*3
               ((+)*256(>)*11(.+)*117(<)*11)*3
               ((+)*256(>)*12(.+)*116(<)*12)*3
@@ -208,14 +209,14 @@ to size
               ((+)*256(>)*26(.+)*102(<)*26)*3
               ((+)*256(>)*27(.+)*101(<)*27)*3
               ((+)*256(>)*28(.+)*100(<)*28)*3
-              ((+)*256(>)*29(.+)* 99(<)*29)*3
+              ((+)*256(>)*29(.+)*99 (<)*29)*3
              ]
              (>)*6
              (-)*56(+)*56
              <
              <-[
               (<)*6(-)*64(+)*64
-              ((+)*256(>)* 9(.+)*119(<)* 9)*3
+              ((+)*256(>)*9 (.+)*119(<)*9 )*3
               ((+)*256(>)*10(.+)*118(<)*10)*3
               ((+)*256(>)*11(.+)*117(<)*11)*3
               ((+)*256(>)*12(.+)*116(<)*12)*3
@@ -235,11 +236,11 @@ to size
               ((+)*256(>)*26(.+)*102(<)*26)*3
               ((+)*256(>)*27(.+)*101(<)*27)*3
               ((+)*256(>)*28(.+)*100(<)*28)*3
-              ((+)*256(>)*29(.+)* 99(<)*29)*3
+              ((+)*256(>)*29(.+)*99 (<)*29)*3
              ]
              <-[
               (<)*5(-)*64(+)*64
-              ((+)*256(>)* 9(.+)*119(<)* 9)*3
+              ((+)*256(>)*9 (.+)*119(<)*9 )*3
               ((+)*256(>)*10(.+)*118(<)*10)*3
               ((+)*256(>)*11(.+)*117(<)*11)*3
               ((+)*256(>)*12(.+)*116(<)*12)*3
@@ -259,11 +260,11 @@ to size
               ((+)*256(>)*26(.+)*102(<)*26)*3
               ((+)*256(>)*27(.+)*101(<)*27)*3
               ((+)*256(>)*28(.+)*100(<)*28)*3
-              ((+)*256(>)*29(.+)* 99(<)*29)*3
+              ((+)*256(>)*29(.+)*99 (<)*29)*3
              ]
              <-[
               (<)*4(-)*64(+)*64
-              ((+)*256(>)* 9(.+)*119(<)* 9)*3
+              ((+)*256(>)*9 (.+)*119(<)*9 )*3
               ((+)*256(>)*10(.+)*118(<)*10)*3
               ((+)*256(>)*11(.+)*117(<)*11)*3
               ((+)*256(>)*12(.+)*116(<)*12)*3
@@ -283,11 +284,11 @@ to size
               ((+)*256(>)*26(.+)*102(<)*26)*3
               ((+)*256(>)*27(.+)*101(<)*27)*3
               ((+)*256(>)*28(.+)*100(<)*28)*3
-              ((+)*256(>)*29(.+)* 99(<)*29)*3
+              ((+)*256(>)*29(.+)*99 (<)*29)*3
              ]
              >>>
 
-             Bump the nearby reverse tripwire to height 2 to reduce
+             Bump the nearby reverse tripwire to height two to reduce
              false positives
              +>
 
@@ -305,12 +306,12 @@ to size
              unlucky with the probabilistic lock/
              
              Try another probabilistic lock on one of the two
-             preceding cells if the tripwire on cell 1 hasn't broken
+             preceding cells if the tripwire on cell one hasn't broken
              
-             If the tripwire on cell 1 has broken we try to lock the
+             If the tripwire on cell one has broken we try to lock the
              enemy on our flag because we have no better choice; do
-             the same if cell 8 is near zero /which means the opponent
-             is probably between cells 1 and 8/
+             the same if cell eight is near zero /which means the
+             opponent is probably between cells one and eight/
              
              If the second probabilistic lock breaks we instead
              shudder because it's quite possible the opponent has a
@@ -335,14 +336,14 @@ to size
                   ((+)*256(>)*26(.+)*102(<)*26)*3
                   ((+)*256(>)*27(.+)*101(<)*27)*3
                   ((+)*256(>)*28(.+)*100(<)*28)*3
-                  ((+)*256(>)*29(.+)* 99(<)*29)*3
+                  ((+)*256(>)*29(.+)*99 (<)*29)*3
                  ]+
                  
-                 Assume the opponent's still clearing cell 8 if it's not
-                 near zero; otherwise lock on cell 7
+                 Assume the opponent's still clearing cell eight if
+                 it's not near zero; otherwise lock on cell seven
                  (>)*6--([+{
                    
-                   Cell 8 lock
+                   Cell eight lock
                    (
                     (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%6
                     (+)*57(-)*56(<{(+)*13}>)%1
@@ -377,7 +378,7 @@ to size
                    >>(>[(+)*20[-]])*20
                    }]<
                   
-                  Cell 7 lock
+                  Cell seven lock
                   (
                    (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%5..
                    (+)*57(-)*56(<{(+)*13}>)%1
@@ -395,7 +396,7 @@ to size
                    (+)*57(-)*56(<{(+)*7}>)%4
                   )*18
                   (
-                   If we're only on cell 7 there's a good chance
+                   If we're only on cell seven there's a good chance
                    the opponent could outrun us; so we stall checking
                    the tripwire until we're close to the cycle limit
                    so that the opponent has no chance to win before
@@ -413,7 +414,7 @@ to size
                  )%5
                  }]
                 
-                Cell 7 was cleared
+                Cell seven was cleared
                 
                 (<)*6
                 ((+)*256(>)*16(.+)*112(<)*16)*3
@@ -429,15 +430,14 @@ to size
                 ((+)*256(>)*26(.+)*102(<)*26)*3
                 ((+)*256(>)*27(.+)*101(<)*27)*3
                 ((+)*256(>)*28(.+)*100(<)*28)*3
-                ((+)*256(>)*29(.+)* 99(<)*29)*3
+                ((+)*256(>)*29(.+)*99 (<)*29)*3
                )%5
               ]++>
-              We have 8 spare cycles here; use them to increase the
-              decoy in front of us in order to aid synchronization
-              against slow programs and confuse programs that use
-              the tape for computation
-              >++<(.)*4
-             )*11
+              We have eight spare cycles here; use them to increase
+              the decoy in front of us in order to aid synchronization
+              against slow programs and confuse programs that use the
+              tape for computation
+              >++<(.)*4 )*11
              
              (
               (-)*56(+)*57(<{(+)*9}>)%3
@@ -457,7 +457,7 @@ to size
                ((+)*256(>)*26(.+)*102(<)*26)*3
                ((+)*256(>)*27(.+)*101(<)*27)*3
                ((+)*256(>)*28(.+)*100(<)*28)*3
-               ((+)*256(>)*29(.+)* 99(<)*29)*3
+               ((+)*256(>)*29(.+)*99 (<)*29)*3
               ]++>(.)*8
              )*14
              (
@@ -478,7 +478,7 @@ to size
                ((+)*256(>)*26(.+)*102(<)*26)*3
                ((+)*256(>)*27(.+)*101(<)*27)*3
                ((+)*256(>)*28(.+)*100(<)*28)*3
-               ((+)*256(>)*29(.+)* 99(<)*29)*3
+               ((+)*256(>)*29(.+)*99 (<)*29)*3
               ]++>(.)*8
              )*18
 
@@ -511,13 +511,13 @@ to size
              (-)*56(+)*57<<<<<<<+>>>>>>>
              (-)*56(+)*57
 
-             It's now cycle 38169 and we have seven max height decoys
-             between here and our flag; additionally the tape length
-             is almost certainly at least eighteen if the opponent is
-             a /presumably slow/ rush program or else the opponent
-             would not have been locked due to rule of nine; and the
-             opponent probably isn't a turtle because they would have
-             broken the lock by now
+             It's now cycle three eight one six nine and we have seven
+             max height decoys between here and our flag; additionally
+             the tape length is almost certainly at least eighteen if
+             the opponent is a /presumably slow/ rush program or else
+             the opponent would not have been locked due to rule of
+             nine; and the opponent probably isn't a turtle because
+             they would have broken the lock by now
 
              Time to rush!
 
@@ -576,25 +576,25 @@ to size
             In both cases there will be nothing but small decoys
             between our large decoy and the flag
 
-            We thus start clearing from cell 11 after first removing
-            the decoy we placed there ourself; we check for values
-            near zero to eliminate small decoys; then for values near
-            128 to clear the flag
+            We thus start clearing from cell eleven after first
+            removing the decoy we placed there ourself; we check for
+            values near zero to eliminate small decoys; then for
+            values near the starting flag height to clear the flag
 
             Just in case someone does try to lock us we clear in the
             opposite direction with a three cycle clear if we reach
-            136 without zeroing the cell; this defeats the vast
-            majority of lock algorithms
+            one hundred and thirty six without zeroing the cell; this
+            defeats the vast majority of lock algorithms
 
             If we detected the opponent four or more spaces from our
             flag it's possible/probable it hasn't reached our flag
             yet; and may be setting decoys of its own
             
-            If that happens as we bump the decoys to 2 the opponent is
+            If that happens as we bump the decoys to two the opponent is
             probably a very fast rush /possibly a turtle/ so we only
             set one medium decoy on cell two
             
-            If that happens as we bump the decoys to 3 the opponent is
+            If that happens as we bump the decoys to three the opponent is
             still a fast rush but maybe a little slower; we use our
             remaining tripwires to try to assess where the enemy is
             and set a medium decoy on cell two and large decoys on
