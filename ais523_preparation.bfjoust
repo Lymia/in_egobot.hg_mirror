@@ -294,38 +294,143 @@ to size
              We speed the lock up to fifteen cycles of waiting; this
              makes it slightly harder to break
 
-             Set a 
-
              We alternate between checking to see if it is broken;
              and building max height decoys between here and the flag
 
              If the lock breaks then either it was broken while
-             changing the flag / in which case the opponent has a
-             broken antishudder / or it was broken legitimately; a
-             legitimate break is more likely; we're in trouble! They
-             have more decoys than us and some method of breaking
-             probabilistic locks; we can't synchronize but can't use
-             a probabilistic lock either so we use aim to use a
-             perfect two cycle lock and just guess the polarity
+             changing the flag /in which case the opponent has a
+             broken antishudder/ or it was broken legitimately /in
+             which case either the opponent's using an insane clear
+             algorithm such as an inflexible timer clear or else we're
+             unlucky with the probabilistic lock/
+             
+             Try another probabilistic lock on one of the two
+             preceding cells if the tripwire on cell 1 hasn't broken
+             
+             If the tripwire on cell 1 has broken we try to lock the
+             enemy on our flag because we have no better choice; do
+             the same if cell 8 is near zero /which means the opponent
+             is probably between cells 1 and 8/
+             
+             If the second probabilistic lock breaks we instead
+             shudder because it's quite possible the opponent has a
+             broken antishudder
 
              (
               (-)*56(+)*57(<{(+)*11}>)%2
               (-)*57(+)*56<--[
-               (<)*7
-               ((+)*256(>)*16(.+)*112(<)*16)*3
-               ((+)*256(>)*17(.+)*111(<)*17)*3
-               ((+)*256(>)*18(.+)*110(<)*18)*3
-               ((+)*256(>)*19(.+)*109(<)*19)*3
-               ((+)*256(>)*20(.+)*108(<)*20)*3
-               ((+)*256(>)*21(.+)*107(<)*21)*3
-               ((+)*256(>)*22(.+)*106(<)*22)*3
-               ((+)*256(>)*23(.+)*105(<)*23)*3
-               ((+)*256(>)*24(.+)*104(<)*24)*3
-               ((+)*256(>)*25(.+)*103(<)*25)*3
-               ((+)*256(>)*26(.+)*102(<)*26)*3
-               ((+)*256(>)*27(.+)*101(<)*27)*3
-               ((+)*256(>)*28(.+)*100(<)*28)*3
-               ((+)*256(>)*29(.+)* 99(<)*29)*3
+               <--([+{
+                 (<)*5-[<
+                  
+                  ((+)*256(>)*16(.+)*112(<)*16)*3
+                  ((+)*256(>)*17(.+)*111(<)*17)*3
+                  ((+)*256(>)*18(.+)*110(<)*18)*3
+                  ((+)*256(>)*19(.+)*109(<)*19)*3
+                  ((+)*256(>)*20(.+)*108(<)*20)*3
+                  ((+)*256(>)*21(.+)*107(<)*21)*3
+                  ((+)*256(>)*22(.+)*106(<)*22)*3
+                  ((+)*256(>)*23(.+)*105(<)*23)*3
+                  ((+)*256(>)*24(.+)*104(<)*24)*3
+                  ((+)*256(>)*25(.+)*103(<)*25)*3
+                  ((+)*256(>)*26(.+)*102(<)*26)*3
+                  ((+)*256(>)*27(.+)*101(<)*27)*3
+                  ((+)*256(>)*28(.+)*100(<)*28)*3
+                  ((+)*256(>)*29(.+)* 99(<)*29)*3
+                 ]+
+                 
+                 Assume the opponent's still clearing cell 8 if it's not
+                 near zero; otherwise lock on cell 7
+                 (>)*6--([+{
+                   
+                   Cell 8 lock
+                   (
+                    (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%6
+                    (+)*57(-)*56(<{(+)*13}>)%1
+                   )*9
+                   (
+                    (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%6
+                    (+)*57(-)*56(<{(+)*11}>)%2
+                   )*11
+                   (
+                    (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%6
+                    (+)*57(-)*56(<{(+)*9}>)%3
+                   )*14
+                   (
+                    (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%6
+                    (+)*57(-)*56(<{(+)*7}>)%4
+                   )*18
+                   (
+                    (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%6
+                    (+)*57(-)*56(<{(+)*5}>)%5
+                   )*24
+                   (
+                    Just in case the opponent is on a very long timer;
+                    we have no better use for the cycles
+                    (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%6
+                    (+)*57(-)*56(<{-[<((+)*64(-)*64)*1000]+}>)%6
+                   )*100                   
+                   (
+                    (+)*56(-)*57(<{(+)*3}>)%6
+                    (+)*57(-)*56(<{(+)*3}>)%6
+                   )*21
+                   Time to rush!
+                   >>(>[(+)*20[-]])*20
+                   }]<
+                  
+                  Cell 7 lock
+                  (
+                   (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%5..
+                   (+)*57(-)*56(<{(+)*13}>)%1
+                  )*9
+                  (
+                   (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%5..
+                   (+)*57(-)*56(<{(+)*11}>)%2
+                  )*11
+                  (
+                   (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%5..
+                   (+)*57(-)*56(<{(+)*9}>)%3
+                  )*14
+                  (
+                   (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%5..
+                   (+)*57(-)*56(<{(+)*7}>)%4
+                  )*18
+                  (
+                   If we're only on cell 7 there's a good chance
+                   the opponent could outrun us; so we stall checking
+                   the tripwire until we're close to the cycle limit
+                   so that the opponent has no chance to win before
+                   time runs out but we have a good chance to catch
+                   them if they set few decoys
+                   (+)*56(-)*57(<{-[<((+)*64(-)*64)*1000]+}>)%5..
+                   (+)*57(-)*56(<{-[<((+)*64(-)*64)*1000]+}>)%5..
+                  )*316
+                  (
+                   (+)*56(-)*57(<{(+)*5}>)%5
+                   (+)*57(-)*56(<{(+)*5}>)%5
+                  )*12
+                  Time to rush!
+                  >>(>[(+)*20[-]])*20
+                 )%5
+                 }]
+                
+                Cell 7 was cleared
+                
+                (<)*6
+                ((+)*256(>)*16(.+)*112(<)*16)*3
+                ((+)*256(>)*17(.+)*111(<)*17)*3
+                ((+)*256(>)*18(.+)*110(<)*18)*3
+                ((+)*256(>)*19(.+)*109(<)*19)*3
+                ((+)*256(>)*20(.+)*108(<)*20)*3
+                ((+)*256(>)*21(.+)*107(<)*21)*3
+                ((+)*256(>)*22(.+)*106(<)*22)*3
+                ((+)*256(>)*23(.+)*105(<)*23)*3
+                ((+)*256(>)*24(.+)*104(<)*24)*3
+                ((+)*256(>)*25(.+)*103(<)*25)*3
+                ((+)*256(>)*26(.+)*102(<)*26)*3
+                ((+)*256(>)*27(.+)*101(<)*27)*3
+                ((+)*256(>)*28(.+)*100(<)*28)*3
+                ((+)*256(>)*29(.+)* 99(<)*29)*3
+               )%5
               ]++>
               We have 8 spare cycles here; use them to increase the
               decoy in front of us in order to aid synchronization
@@ -333,9 +438,11 @@ to size
               the tape for computation
               >++<(.)*4
              )*11
+             
              (
               (-)*56(+)*57(<{(+)*9}>)%3
               (-)*57(+)*56<--[
+               
                (<)*7
                ((+)*256(>)*16(.+)*112(<)*16)*3
                ((+)*256(>)*17(.+)*111(<)*17)*3
@@ -356,6 +463,7 @@ to size
              (
               (-)*56(+)*57(<{(+)*7}>)%4
               (-)*57(+)*56<--[
+               
                (<)*7
                ((+)*256(>)*16(.+)*112(<)*16)*3
                ((+)*256(>)*17(.+)*111(<)*17)*3
@@ -418,6 +526,7 @@ to size
              shorter; in case of passive vibration programs we do
              some countervibration
 
+             
              (>+--+.+--+)*8
 
              We predict no interference from the opponent; so we use
