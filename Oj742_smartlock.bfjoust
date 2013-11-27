@@ -10,10 +10,9 @@
 ;After detecting the program's clear cycle we try to freeze them on our locking decoy for a while
 ;if they break free then either our detection was wrong or they're using a timer clear
 ;we try to shudder them using a shudder that should be effective base on our calculations, hopefully
-
 ;The time needed to do this isn't an issue: we'll have more than half the game left by the time we're done
 ;
-;While our detection are meant to be generally effective, we also use special casing detections and locks for quite a few other programs
+;While our detection is meant to be generally effective, we also use special casing detections and locks for quite a few other programs
 ;these special cases may also be useful on other programs as well if they use similar clears, and aren't as exploitable as ais523_omnipotence's special casing
 ;We also have a few special cases against programs that refused to be locked, so we comply and race for their flag
 ;Yes, I have no shame
