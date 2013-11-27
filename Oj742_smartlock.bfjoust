@@ -1,4 +1,4 @@
-;smartlock_v2_beta_final_1
+;smartlock_v2
 ;Oj742
 ;
 ;A lock that checks polarity cycle and offset of the opponent to create an accurate lock
@@ -7,14 +7,18 @@
 ;Taking a page from omnipotence's book we have special casing
 ;for certain programs, though it is hopefully more generalized and less exploitable
 ;
-;It uses a decoy instead of a flag for locking as it takes a good chunk of time determining if it has either
-;a different clear than expected or a timer clear, in which case we go to bunker mode until I come up with a better strategy
+;After detecting the program's clear cycle we try to freeze them on our locking decoy for a while
+;if they break free then either our detection was wrong or they're using a timer clear
+;we try to shudder them using a shudder that should be effective base on our calculations, hopefully
+
 ;The time needed to do this isn't an issue: we'll have more than half the game left by the time we're done
 ;
-;Side note: OHGODWHATAMIDOINGIHAVENOIDEAPLEASEHELP
-;Side note2: It appears that my reliance on special casing has grown far larger than anticipated
-;I should work on that eventually
-;Side note3: Soon
+;While our detection are meant to be generally effective, we also use special casing detections and locks for quite a few other programs
+;these special cases may also be useful on other programs as well if they use similar clears, and aren't as exploitable as ais523_omnipotence's special casing
+;We also have a few special cases against programs that refused to be locked, so we comply and race for their flag
+;Yes, I have no shame
+;
+;Side note: OHGODWHATAMIDOINGIHAVENOIDEAPLEASEHELPALSOHAHAHAIAMTHEWINNERSUCKITEVENTHOUGHITSDOOMEDTOBESHORTLIVEDBUTICANSTILLCHERISHTHISMOMENTSOYEAHTHATSPRETTYMUCHIT
 ;
 
 >(+)*5>>+>>->(+)*5<<(-)*14<(+)*6<(-)*14<(+)*17<
@@ -496,7 +500,7 @@
 (-)*65(>)*27[-[++[(<)*26+>]]]<-[(<)*24+<]>-[<<(-)*17>+>+]<[-<((-)*384(>)*27(+.)*165(<)*27)*3(-)*5>>]<[(-)*4>]<
 --([(-)*256(>)*28(+.)*164(<)*28{}](>)*28(-.)*-1)%-1
 }]<(++-)*-1)%3000]
-::quintopia_space_hotel polarized, aka AW HELL NO
+::quintopia_space_hotel polarized
 (>)*5(>[{}](-)*6[>(-)*6](>)*9(((+)*85[(+)*62[(+)*23[+]]]>)*2((-)*85[(-)*23[(-)*62[-]]]>)*2)*-1)%21
 )%64}]>[(>)*3-[(<)*5[[]]
 ::quintopia_3pac
@@ -1515,7 +1519,7 @@
 ..(+)*32(>)*27[-[++[(<)*26+>]]]<-[(<)*24+<]>-[<<..(+)*13>+>+]<[-<((+)*251(>)*27(+.)*223+(<)*27)*2.(+)*4.>>]<[(+)*1>]<
 ++([(+)*251(>)*28(+.)*222+(<)*28{}](>)*28(-.)*-1)%-1
 }]<(----++)*-1)%3000]
-::quintopia_space_hotel (wait, WHAT!?! MOVE! NOW! FORGET THE LOCK!)
+::quintopia_space_hotel
 <<(+)*176<(+)*60(>)*7(>[{}](+)*6[>(+)*6](>)*8(((-)*85[(-)*62[(-)*23[-]]]>)*2((+)*85[(+)*23[(+)*62[+]]]>)*2)*-1)%21
 )%96}][[]]>-[<
 ::3cycle_neg w/ pos64 offset and wiggle
@@ -2316,7 +2320,7 @@
 ..(+)*32(>)*27[-[++[(<)*26+>]]]<-[(<)*24+<]>-[<<..(+)*13>+>+]<[-<((+)*251(>)*27(+.)*223+(<)*27)*2.(+)*4.>>]<[(+)*1>]<
 ++([(+)*251(>)*28(+.)*222+(<)*28{}](>)*28(-.)*-1)%-1
 }]<(----++)*-1)%3000]
-::quintopia_space_hotel (wait, WHAT!?! MOVE! NOW! FORGET THE LOCK!)
+::quintopia_space_hotel
 <<(+)*176<(+)*60(>)*7(>[{}](+)*6[>(+)*6](>)*8(((-)*85[(-)*62[(-)*23[-]]]>)*2((+)*85[(+)*23[(+)*62[+]]]>)*2)*-1)%21
 )%96}][[]]>-[<
 ::3cycle_neg w/ pos64 offset and wiggle
@@ -3143,7 +3147,7 @@
 ..(+)*32(>)*27[-[++[(<)*26+>]]]<-[(<)*24+<]>-[<<..(+)*13>+>+]<[-<((+)*251(>)*27(+.)*223+(<)*27)*2.(+)*4.>>]<[(+)*1>]<
 ++([(+)*251(>)*28(+.)*222+(<)*28{}](>)*28(-.)*-1)%-1
 }]<(----++)*-1)%3000]
-::quintopia_space_hotel (wait, WHAT!?! MOVE! NOW! FORGET THE LOCK!)
+::quintopia_space_hotel
 <<(+)*176<(+)*60(>)*7(>[{}](+)*6[>(+)*6](>)*8(((-)*85[(-)*62[(-)*23[-]]]>)*2((+)*85[(+)*23[(+)*62[+]]]>)*2)*-1)%21
 )%96}][[]]>-[<
 ::3cycle_neg w/ pos64 offset and wiggle
@@ -3454,6 +3458,6 @@
 (-)*65(>)*27[-[++[(<)*26+>]]]<-[(<)*24+<]>-[<<(-)*17>+>+]<[-<((-)*384(>)*27(+.)*165(<)*27)*3(-)*5>>]<[(-)*4>]<
 --([(-)*256(>)*28(+.)*164(<)*28{}](>)*28(-.)*-1)%-1
 }]<(++-)*-1)%3000)%40])%6210
-;our first sensor is already cleared so we must assume there is nothing more we can do to defend
-;If the opponent is this fast, we might have a chance of winning if we go full offence as well
+;our first tripwire is already cleared so we must assume there is nothing more we can do to defend
+;However, if the opponent is this fast we might have a chance of winning if we go full offence as well
 (>)*4(>[(+)*11([-{[(-)*106[-.]>]}])%22])*21
