@@ -1,4 +1,4 @@
-;smartlock_v2_beta_9
+;smartlock_v2_beta_10
 ;Oj742
 ;
 ;A lock that checks polarity cycle and offset of the opponent to create an accurate lock
@@ -16,6 +16,7 @@
 ;I was making a quicklock based on this cycle detection, but 9000K is way past where I draw the line, limit or no
 ;Side note3: It appears that my reliance on special casing has grown far larger than anticipated
 ;I should work on that eventually
+;Side note4: Soon
 ;
 
 >(+)*5>>+>>->(+)*5<<(-)*14<(+)*6<(-)*14<(+)*17<
@@ -29,10 +30,10 @@
 ;Anti defence program code derived from Oj742_smart_timerclear
 (>)*5(>[-[++[+[+[-----[-[(+)*14<<[(+)*11[-]]]]]]]]>][++[+.]]>
 ([-{[(+)*89[+.]]}>[-[++[+[+[-----[-[(+)*22<<[-]]]]]]]>][++[+.]]>
-([-{[(+)*95[+.]]}>[-[++[+[+[-----[-[(+)*33<<[-.]]]]]]]>][++[+.]]>
+([-{[(+)*95[+.]]}..[(-)*4[-.]]>[-[++[+[+[-----[-[(+)*33<<[-.]]]]]]]>][++[+.]]>
 ([-{[(+)*105[+.]]}>[-[++[+[+[-----[-[(+)*39<<[-.]]]]]]]>][++[+.]]>
 ([-{[(+)*120[+.]]}>[-[++[+[+[-----[-[(+)*59<<[-.]]]]]]]>][++[+.]]>
-])%280])%280])%275])%280)*10>(+.+..+)*-1
+])%280])%280])%275]<)%280)*20>(+.+..+)*-1
 }[([{([{([{([{([{([{([{([{([{([{([{([{([{([{([{([{([{([{([{([{([{([{([{
 ;we've been waiting too long for the enemy to clear this decoy even though we know they have messed with it
 ;it's unlikely that we can prevent any sort of clear on our flag so let's just go on full offence
