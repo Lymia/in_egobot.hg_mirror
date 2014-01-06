@@ -20,7 +20,7 @@
 >(+)*5>>+>>->(+)*5<<(-)*14<(+)*6<(-)*14<(+)*17<
 ;My god turtles are so annoying
 (-)*42(>)*6(>[-[++[+[+[-----[-[(>)*1(>[(+)*11([-{[(-)*106[-.]>]}])%22])*21
-]]]]]]]+)*2(<)*5([{>[<([{
+]]]]]]]+)*2(<)*5([{
 ;we've been waiting for some sort of enemy contact for 6200 cycles now so assume that the opponent is defensive or really really slow
 ;why 6200 cycles? its a number likely greater than the number of cycles it should take to detect an offensive program
 ;Anti defence program code derived from Oj742_smart_timerclear
@@ -3451,10 +3451,7 @@
 (-)*63(>)*26[-[++[(<)*25+>]]]<-[(<)*23+<]>-[<<(-)*17>+>+]<[-<((-)*384(>)*26(+.)*166(<)*26)*3(-)*5>>]<[(-)*4>]<
 (-)*65(>)*27[-[++[(<)*26+>]]]<-[(<)*24+<]>-[<<(-)*17>+>+]<[-<((-)*384(>)*27(+.)*165(<)*27)*3(-)*5>>]<[(-)*4>]<
 --([(-)*256(>)*28(+.)*164(<)*28{}](>)*28(-.)*-1)%-1
-}]<(++-)*-1)%3000)%40])%5205
-]
-::Oj742_wheatly
->>>(>[(>)*6(>[(-)*81[-]])*20])*20}])%992
+}]<(++-)*-1)%3000)%40])%6200
 ;our first tripwire is already cleared so we must assume there is nothing more we can do to defend
 ;However, if the opponent is this fast we might have a chance of winning if we go full offence as well
 (>)*4(>[(+)*11([-{[(-)*106[-.]>]}])%22])*21
