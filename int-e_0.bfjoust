@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<title>BF Joust - Esolang</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.20.4" />
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=BF_Joust&amp;action=edit" />
+<link rel="edit" title="Edit" href="/w/index.php?title=BF_Joust&amp;action=edit" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Esolang (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://esolangs.org/w/api.php?action=rsd" />
+<link rel="copyright" href="/wiki/Esolang:Copyrights" />
+<link rel="alternate" type="application/atom+xml" title="Esolang Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://esolangs.org/w/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://esolangs.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: esolang_wiki:resourceloader:filter:minify-css:7:c55ed260b29c88e92da480f8fc211872 */</style>
+
+<script src="http://esolangs.org/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"BF_Joust","wgTitle":"BF Joust","wgCurRevisionId":37998,"wgArticleId":2817,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Languages","Implemented","Brainfuck derivatives","Cell-based","2009"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"BF_Joust","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVectorEnabledModules":{"collapsiblenav":true,"collapsibletabs":true,"editwarning":true,"expandablesearch":false,"footercleanup":false,"sectioneditlinks":false,"experiments":true},"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"hidesig":true,"templateEditor":false,"templates":false,"preview":false,"previewDialog":false,"publish":false,"toc":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"useeditwarning":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
+/* cache key: esolang_wiki:resourceloader:filter:minify-js:7:40574ac4fa64d974c93767d264416c8f */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-BF_Joust skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading"><span dir="auto">BF Joust</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From Esolang</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><b>BF Joust</b> (also known as <b>Brainfuck Joust</b>) is a <a href="/wiki/Brainfuck" title="Brainfuck">Brainfuck</a>-based game, originally invented by Kerim Aydin, consisting of two programs in a Brainfuck-like language which attempt to modify a shared memory array in a particular way.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#The_Current_Rules"><span class="tocnumber">1</span> <span class="toctext">The Current Rules</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Syntax"><span class="tocnumber">1.1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#The_Battlefield"><span class="tocnumber">1.2</span> <span class="toctext">The Battlefield</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#The_Battle"><span class="tocnumber">1.3</span> <span class="toctext">The Battle</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Matches"><span class="tocnumber">1.4</span> <span class="toctext">Matches</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Abbreviations"><span class="tocnumber">1.5</span> <span class="toctext">Abbreviations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#egojoust"><span class="tocnumber">3</span> <span class="toctext">egojoust</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Latest_changes"><span class="tocnumber">4</span> <span class="toctext">Latest changes</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Strategies"><span class="tocnumber">5</span> <span class="toctext">Strategies</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#External_resources"><span class="tocnumber">6</span> <span class="toctext">External resources</span></a></li>
+</ul>
+</td></tr></table>
+<h2><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=1" title="Edit section: The Current Rules">edit</a>]</span> <span class="mw-headline" id="The_Current_Rules"> The Current Rules </span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=2" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax"> Syntax </span></h3>
+<p>In BF Joust, two programs (called 'warriors', borrowing from the CoreWars parlance) square off against one another by synchronously modifying a shared memory array. Both programs are written in a variant of <a href="/wiki/Brainfuck" title="Brainfuck">brainfuck</a>, reduced to the following instruction set:
+</p>
+<ul><li> <code>&lt;</code> move the tape pointer away from the opponent
+</li><li> <code>&gt;</code> move the tape pointer toward the opponent
+</li><li> <code>-</code> decrease the tape element at the tape pointer
+</li><li> <code>+</code> increase the tape element at the tape pointer
+</li><li> <code>[</code> jump to just after the matching ] if the current tape element is 0
+</li><li> <code>]</code> jump to just after the matching [ if the current tape element is not 0
+</li><li> <code>.</code> do nothing
+</li></ul>
+<p>Like in brainfuck, unrecognised characters are just ignored, and can be used as comments. (Note that <code>()%*</code> and digits are used for abbreviation syntax, though; and that the original version of BF Joust reserved <code>,</code> as well, although it's unlikely to be given a use after this long.)
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=3" title="Edit section: The Battlefield">edit</a>]</span> <span class="mw-headline" id="The_Battlefield"> The Battlefield </span></h3>
+<p>The battlefield is an array (or 'tape') which both warriors are able to modify; the tape is 10 to 30 elements long (either randomly, or running on every possible length). Each element (or 'cell') in this array can contain any of 256 values, which it is most helpful to consider as being in the range [-127,128]. Moreover, the cells wrap, so that 128 plus 1 is -127 and -127 minus 1 is 128. At the beginning of a battle, every cell is set to zero except for the ones at each end, which are set to 128. These cells, called 'flags' are where the warriors' data pointers are pointing at the beginning of each round. Thus, each warrior can pretend that, at the beginning of a round, its data pointer is pointed to cell zero (the first cell) where its own flag is located and its enemy's flag stands at the far right end of the tape.
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=4" title="Edit section: The Battle">edit</a>]</span> <span class="mw-headline" id="The_Battle"> The Battle </span></h3>
+<p>In each round of a match, both warriors simultaneously execute one of the above instructions at each time step (or 'cycle'). (Normally, applying two command effects simultaneously is not problematic, e.g. <code>+</code> and <code>+</code> on the same cycle increase a cell by two, and <code>+</code> and <code>-</code> on the same cycle cancel each other out and don't do anything. The potential ambiguity is with <code>[</code> or <code>]</code> on the same cycle as <code>+</code> or <code>-</code>; in such cases, the flow control command sees the value before, rather than after, the increment or decrement.) This repeats until one or both of the warriors have lost the battle, or 100,000 cycles have been executed.
+</p><p>A warrior loses when either of the following happens:
+</p>
+<ul><li> Its own flag is set to zero for two consecutive cycles, or
+</li><li> Its data pointer has left the tape (that is, it executes <code>&gt;</code> at its enemy's flag or <code>&lt;</code> at its own flag)
+</li></ul>
+<p>Note that reaching the end of the program (as opposed to the tape) is not a loss; rather, a program that does that takes no action on any future cycle, and thus loses, wins, or draws according to whether the opponent manages to zero its flag, commit suicide, or do neither. (This means that even an empty program can theoretically win, although it tends to do quite badly in practice.)
+</p><p>A warrior wins if the other warrior loses. That is, the goal is to either:
+</p>
+<ul><li> Zero the enemy's flag before it zeroes yours, or
+</li><li> Trick the enemy into moving off the end of the tape ("committing suicide")
+</li></ul>
+<p>If both warriors lose simultaneously, or the timeout of 100,000 cycles is reached, the game is a draw.
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=5" title="Edit section: Matches">edit</a>]</span> <span class="mw-headline" id="Matches"> Matches </span></h3>
+<p>Rather than running a single run between two warriors (which would have a random tape length from 10 to 30), tournaments generally run 42 matches between the two warriors, in order to make the results deterministic. Two things are varied: the tape has one of 21 different lengths (the integers from 10 to 30 inclusive); and one of the warriors may have its polarity exchanged, i.e., exchanging the meaning of <code>+</code> and <code>-</code>. (It doesn't matter which warrior's polarity is exchanged, since the results are provably identical in either case. Polarity exchange removes the degenerate strategy of submitting programs which are nearly identical to existing programs except for the direction (<code>+</code> or <code>-</code>) of their <a href="/wiki/BF_Joust_strategies#Clear" title="BF Joust strategies">clears</a> and/or <a href="/wiki/BF_Joust_strategies#Decoy" title="BF Joust strategies">decoys</a>. The polarity where both programs run on their original polarity is sometimes known as "sieve", and the exchanged polarity as "kettle".)
+</p><p>A program is scored based on the number of configurations in which it won, minus the number of configurations in which it lost; thus +42 is a perfect score for an individual match, and -42 the worst possible. (Odd scores are possible if an odd number of matches are draws.)
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=6" title="Edit section: Abbreviations">edit</a>]</span> <span class="mw-headline" id="Abbreviations"> Abbreviations </span></h3>
+<p>BF Joust supports a couple of abbreviations which work like a preprocessor, in order to enable long programs to be written more quickly, to be smaller, and to be more readable:
+</p>
+<dl><dt> Run-length encoding
+</dt><dd> Any repeating piece of code can be abbreviated as long as the brackets in the repeated portion are matched; the syntax is to enclose the repeating piece in parentheses, then write an asterisk and a repeat count. For instance, <code>(+-)*5</code> is equivalent to <code>+-+-+-+-+-</code>.
+</dd><dt> Nesting
+</dt><dd> For repetitions that nest inside each other (i.e. containing unmatched brackets), a separate syntax is provided which is best demonstrated by example: <code>(+[{.}]-)%5</code> means <code>+[+[+[+[+[.]-]-]-]-]-</code>. (As a general definition, <code>(<i>a</i>{<i>b</i>}<i>c</i>)%<i>n</i></code> would be equivalent to <code>(<i>a</i>)*<i>n</i> <i>b</i> (<i>c</i>)*<i>n</i></code> if <code>()*</code> allowed unmatched brackets.) Although it is legal to use this syntax without loops involved, there is not much point, e.g. <code>(+{.}-)%5</code> is equivalent to <code>(+)*5.(-)*5</code>, which is probably clearer. Note that the various sorts of bracket still have to be matched as a whole, although unmatched <code>[</code> are allowed between the <code>(</code> and <code>{</code> as long as they are matched by a bracket between the <code>}</code> and <code>)</code>.
+</dd></dl>
+<p>In some interpreters (including egojoust), giving a repeat count of -1 indicates that the enclosed section of code should be repeated until the match is over.
+</p><p>These abbreviations are merely syntactic sugar, and their semantics are identical to if they were expanded before the program started to run (and in fact, at least one interpreter does this in most cases). However, they are typically special-cased to run more efficiently (in terms of the length of time needed for an interpreter to determine the winner of a match, as opposed to anything that affects the result of the match itself), and thus are often worth using on that basis as well as the readability gains.
+</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=7" title="Edit section: History">edit</a>]</span> <span class="mw-headline" id="History"> History </span></h2>
+<p>The original version of BF Joust lacked the special syntax for repeating code and the <code>.</code> instruction. Each match was a single round on a random tape length in only the "sieve" polarity. Moreover, the tapes were very long, containing at least 135 cells. Commensurate with the longer tape lengths, matches lasted longer, going to 384,000 cycles. Finally, the flag was considered down if it reached zero for even a single cycle.
+</p><p><a href="/wiki/User:Ais523" title="User:Ais523">User:ais523</a> added the <code>.</code> instruction, shortened the tape lengths to current values (see the section "Matches"), added the special syntax, and added the rule about the flag needing to be down for two consecutive cycles.
+</p><p>ehird added the requirement that a match be run on all tape lengths and both polarities for the version (egojoust) that was built in to EgoBot. At the same time, <a href="/wiki/Gregor_Richards" title="Gregor Richards">Gregor</a> devised a scoring system for a tournament "hill", where beating better opponents improved your score as much as beating more opponents.
+</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=8" title="Edit section: egojoust">edit</a>]</span> <span class="mw-headline" id="egojoust"> egojoust </span></h2>
+<p><a href="/wiki/EgoBot" title="EgoBot">EgoBot</a> runs a BF Joust hill on #esoteric on FreeNode. For a long time it was named after the interpreter it used, egojoust; nowadays it uses <a rel="nofollow" class="external text" href="https://github.com/fis/chainlance">gearlance</a> instead, but "egojoust" is still a plausible name for a BF Joust hill running on EgoBot, and thus is still often used to refer to the hill.
+</p><p>The current scoreboard for the #esoteric hill is at <a rel="nofollow" class="external free" href="http://codu.org/eso/bfjoust/report.txt">http://codu.org/eso/bfjoust/report.txt</a> (with an explanation of the most recently added program's scoring at <a rel="nofollow" class="external free" href="http://codu.org/eso/bfjoust/breakdown.txt">http://codu.org/eso/bfjoust/breakdown.txt</a>).
+</p><p>All programs currently on the hill are available at <a rel="nofollow" class="external free" href="http://codu.org/eso/bfjoust/in_egobot/">http://codu.org/eso/bfjoust/in_egobot/</a>, which may also be cloned as an hg repository for old programs.
+</p><p>For information on how the scores are (currently) calculated, see <a rel="nofollow" class="external free" href="http://codu.org/eso/bfjoust/SCORES">http://codu.org/eso/bfjoust/SCORES</a>
+</p><p>To add a program to the #esoteric BF Joust hill, join #esoteric on FreeNode, and type
+</p>
+<pre>!bfjoust &lt;your program name&gt; &lt;your program source&gt;
+</pre>
+<p>In a few seconds your score will be reported and the scoreboard will be updated. You may also send programs in private messages to EgoBot, using the same syntax. If your program is too long to fit on a line of IRC, you can instead post it online and use a link starting with <code>http://</code> in place of the program.
+</p><p>The source code for EgoJoust and EgoBot are available in EgoBot's Mercurial repository at <a rel="nofollow" class="external free" href="https://codu.org/projects/egobot/hg/">https://codu.org/projects/egobot/hg/</a> .
+</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=9" title="Edit section: Latest changes">edit</a>]</span> <span class="mw-headline" id="Latest_changes"> Latest changes </span></h2>
+<p>Due to ambiguity in the definitions of expandable repetitions, they are being further defined. Current thoughts are:
+</p>
+<ul><li> Parentheses must directly contain either one or zero braces after the expansion of all interior parentheses.
+</li><li> Braces may be nested within braces. The innermost parentheses match the outermost braces, and expanding that pair first makes the rest apparent. (a(b{c{d}e}f)%2g)%2 expands to abbcabbcdeffgeffg:
+<ul><li> (a(b{c{d}e}f)%2g)%2
+</li><li> (abbc{d}effg)%2
+</li><li> abbcabbcdeffgeffg
+</li></ul>
+</li><li> Any parentheses which directly contain braces after expansion of all interior parentheses <b>must</b> be terminated by a&#160;%.
+</li><li> Any parentheses which do not contain braces after expansion of all interior parentheses <b>must</b> be terminated by a *.
+</li><li> Parentheses may be terminated by *0, in which case their content is ignored.
+</li><li> The behavior of braces within parentheses terminated by&#160;%0 is currently disputed, but since this is a worthless construct they may be left undefined.
+</li></ul>
+<p>Furthermore, it is currently disputed whether a program which lowers a flag to zero then on the next turn leaves the tape loses or ties. This is because it is unclear when the conditions for a flag being down for two cycles and the tape pointers being valid should be checked relative to each other; there is some controversy about whether it's simultaneous, or one happens before the other. (It seems that most interpreters, however, consider the pointer position check to happen before the flag value check, and thus lose first.)
+</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=10" title="Edit section: Strategies">edit</a>]</span> <span class="mw-headline" id="Strategies"> Strategies </span></h2>
+<p>BF Joust is more involved than the simple rules might imply. Various strategies are detailed at <a href="/wiki/BF_Joust_strategies" title="BF Joust strategies">BF Joust strategies</a>.
+</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=BF_Joust&amp;action=edit&amp;section=11" title="Edit section: External resources">edit</a>]</span> <span class="mw-headline" id="External_resources"> External resources </span></h2>
+<ul><li> <a rel="nofollow" class="external text" href="http://agora-notary.wikidot.com/deleted:brainfuck-joust">Where BF Joust was introduced (as a contest within the nomic Agora; see page history for details of the original rules)</a>
+</li><li> <a rel="nofollow" class="external text" href="http://nethack4.org/esolangs/juiced.c">ais523's interpreter for his revised version</a>
+</li><li> <a rel="nofollow" class="external text" href="http://retrocode.blogspot.com/2009/05/bf-joust-king-of-hill.html">Retro Programming has a post discussing the new rules</a>
+</li><li> <a rel="nofollow" class="external text" href="http://codu.org/eso/bfjoust/egojsout/egojsout.html">Online BF Joust interpreter/debugger</a>
+</li><li> <a rel="nofollow" class="external text" href="http://codu.org/eso/bfjoust/report.txt">The current freenode.net #esoteric hill</a>
+</li><li> <a rel="nofollow" class="external text" href="http://www.yoyogames.com/games/164956-iconjoust">IconJoust, a graphical Windows BF Joust interpreter/debugger written in GML</a>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 43/1000000
+Preprocessor generated node count: 48/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key esolang_wiki:pcache:idhash:2817-0!*!0!!en!*!* and timestamp 20140311180341 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://esolangs.org/w/index.php?title=BF_Joust&amp;oldid=37998">http://esolangs.org/w/index.php?title=BF_Joust&amp;oldid=37998</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Languages" title="Category:Languages">Languages</a></li><li><a href="/wiki/Category:Implemented" title="Category:Implemented">Implemented</a></li><li><a href="/wiki/Category:Brainfuck_derivatives" title="Category:Brainfuck derivatives">Brainfuck derivatives</a></li><li><a href="/wiki/Category:Cell-based" title="Category:Cell-based">Cell-based</a></li><li><a href="/wiki/Category:2009" title="Category:2009">2009</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Personal tools</h5>
+	<ul>
+		<li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=BF+Joust&amp;type=signup">Create account</a></li>
+		<li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=BF+Joust" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Namespaces</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/BF_Joust"  title="View the content page [c]" accesskey="c">Page</a></span></li>
+					<li  id="ca-talk"><span><a href="/wiki/Talk:BF_Joust"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+	<h4>
+		</h4>
+	<h5><span>Variants</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Views</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/BF_Joust" >Read</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=BF_Joust&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=BF_Joust&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Search</label></h5>
+	<form action="/w/index.php" id="searchform">
+				<div id="simpleSearch">
+						<input name="search" title="Search Esolang [f]" accesskey="f" id="searchInput" />						<button name="button" title="Search the pages for this text" id="searchButton" width="12" height="13"><img src="/w/skins/vector/images/search-ltr.png?303" alt="Search" /></button>								<input type='hidden' name="title" value="Special:Search"/>
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(/w/images/c/c9/Logo.png);" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>Navigation</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+			<li id="n-portal"><a href="/wiki/Esolang:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+			<li id="n-Language-list"><a href="/wiki/Language_list">Language list</a></li>
+			<li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+			<li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+			<li id="n-help"><a href="/wiki/Esolang:Help" title="The place to find out">Help</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal" id='p-tb'>
+	<h5>Toolbox</h5>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/BF_Joust" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/BF_Joust" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="/w/index.php?title=BF_Joust&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="/w/index.php?title=BF_Joust&amp;oldid=37998" title="Permanent link to this revision of the page">Permanent link</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 8 December 2013, at 03:08.</li>
+											<li id="footer-info-copyright">Content is available under <a href="/wiki/Esolang:Copyrights" title="Esolang:Copyrights">CC0 public domain dedication</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-about"><a href="/wiki/Esolang:About" title="Esolang:About">About Esolang</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Esolang:General_disclaimer" title="Esolang:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="/w/skins/common/images/cc-0.png" alt="CC0 public domain dedication" width="88" height="31" /></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/w/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script src="http://esolangs.org/w/load.php?debug=false&amp;lang=en&amp;modules=skins.vector&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","ext.vector.collapsibleNav","ext.vector.collapsibleTabs","ext.vector.editWarning"], null, true);
+}</script>
+<script src="http://esolangs.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<!-- Served in 0.105 secs. -->
+	</body>
+<!-- Cached 20140311180341 -->
+</html>
